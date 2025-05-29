@@ -7,9 +7,9 @@ const roboto = Roboto()
 export default function CardGob() {
   return (
     <article className={`border border-gray-400 w-[28%] p-5 rounded-xl flex flex-col gap-1 ${roboto}`}>
-        <header>
+        <header className="flex flex-col gap-2">
             <span className="text-[#0088FF] font-semibold">Punto Gob - Sambil</span>
-            <Image src={ImgPrueba}/>
+            <Image src={ImgPrueba} className="rounded-md"/>
             <span className="text-gray-500">1.4km de distancia - Sambil, Santo Domingo</span>
         </header>
         <main>
