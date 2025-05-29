@@ -3,6 +3,7 @@ import Header from "../../components/components - globals/Header"
 import SectionPuntoGob from "../../components/components - Home/components/Section - PuntoGob"
 import SectionSearch from "../../components/components - Home/components/Section - Search"
 import SectionServicios from "../../components/components - Home/components/Section - Servicios"
+import SectionTramites from "../../components/components - Home/components/Section - Tramites"
 
 export default function page() {
   return (
@@ -12,6 +13,7 @@ export default function page() {
             <SectionSearch/>
             <SectionServicios/>
             <SectionPuntoGob/>
+            <SectionTramites/>
         </main>
         <Footer/>
     </body>
