@@ -1,5 +1,6 @@
 import Footer from "../../components/components - globals/Footer"
 import Header from "../../components/components - globals/Header"
+import SectionPreguntas from "../../components/components - Home/components/Section - Preguntas"
 import SectionPuntoGob from "../../components/components - Home/components/Section - PuntoGob"
 import SectionSearch from "../../components/components - Home/components/Section - Search"
 import SectionServicios from "../../components/components - Home/components/Section - Servicios"
@@ -14,6 +15,7 @@ export default function page() {
             <SectionServicios/>
             <SectionPuntoGob/>
             <SectionTramites/>
+            <SectionPreguntas/>
         </main>
         <Footer/>
     </body>
