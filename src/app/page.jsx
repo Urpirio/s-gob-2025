@@ -6,7 +6,7 @@ import SectionSearch from "../../components/components - Home/components/Section
 import SectionServicios from "../../components/components - Home/components/Section - Servicios"
 import SectionTramites from "../../components/components - Home/components/Section - Tramites"
 
-export default function page() {
+export default function Home() {
   return (
     <body>
         <Header/>
