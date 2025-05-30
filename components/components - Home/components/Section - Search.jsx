@@ -4,7 +4,7 @@ export default function SectionSearch() {
   return (
  
      <section className="flex-1 flex flex-col justify-center items-center px-4 pt-20 pb-10">
-        <h1 className="flex flex-col animate-pulse text-center text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-semibold">
+        <h1 className="flex flex-col  animate-pulse  text-center text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-semibold">
           <span>Hola, Que vamos</span>
           <span className="flex flex-wrap justify-center gap-5">
             a
