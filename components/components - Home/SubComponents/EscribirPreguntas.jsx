@@ -20,6 +20,7 @@ export default function EscribirPreguntas() {
         [&div>input]:p-2
         [&div>input]:rounded-md
       [&div>input]:bg-[#F3F3F3]
+        [&div>input]:outline-none
         [&div>button]:border
         [&div>button]:pl-15
         [&div>button]:pr-15
