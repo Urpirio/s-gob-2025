@@ -5,6 +5,7 @@ import SectionPuntoGob from "../../components/components - Home/components/Secti
 import SectionSearch from "../../components/components - Home/components/Section - Search"
 import SectionServicios from "../../components/components - Home/components/Section - Servicios"
 import SectionTramites from "../../components/components - Home/components/Section - Tramites"
+import SectionComentarios from "../../components/components - Home/components/Section-comentarios"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
             <SectionPuntoGob/>
             <SectionTramites/>
             <SectionPreguntas/>
+            <SectionComentarios/>
         </main>
         <Footer/>
     </body>
