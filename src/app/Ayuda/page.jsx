@@ -5,6 +5,7 @@ export default function Ayuda() {
   return (
     <body>
         <Header/>
+        gffgc
         <Footer/>
     </body>
   )
