@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { AiOutlineGlobal } from "react-icons/ai";
+import Image from "next/image";
+import LogoGob from "@/../public/img - Home/image 4 (1).png";
 
 export default function Header() {
   return (
     <header className="flex pt-5 pb-5 pr-5 pl-5 bg-white shadow-md sticky top-0 z-50">
         <div className="flex items-center flex-grow flex-basis-0">
-            <h1 className="text-3xl font-extrabold text-blue-700 tracking-tight drop-shadow-sm select-none">LOGO</h1>
+            <Image src={LogoGob} alt="Logo" width={98} height={98} className="mr-2 object-contain" priority />
+         
         </div>
         <nav className="
             flex 
