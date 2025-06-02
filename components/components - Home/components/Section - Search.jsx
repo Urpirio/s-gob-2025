@@ -1,4 +1,6 @@
 import { CiSearch } from "react-icons/ci";
+import { IoLocationSharp } from "react-icons/io5";
+
 
 export default function SectionSearch() {
   return (
@@ -7,8 +9,8 @@ export default function SectionSearch() {
         <h1 className="flex flex-col  animate-pulse  text-center text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-semibold">
           <span>Hola, Que vamos</span>
           <span className="flex flex-wrap justify-center gap-5">
-            a
-            <span className="font-semibold text-blue-300">gestionar</span>
+            a{" "}
+            <span className="font-semibold text-blue-300">gestionar</span>{" "}
             hoy?
           </span>
         </h1>
@@ -19,12 +21,15 @@ export default function SectionSearch() {
           <div className="bg-blue-500 flex items-center justify-center w-[45px] rounded-full h-[45px]">
             <CiSearch className="text-3xl text-white "/>
           </div>
-          <div className="flex pr-3 ml-2">
+          <div className="flex bg-white focus:outline-none items-center  rounded-full p-2 pr-3 ml-2">
             <input
-              className="bg-white focus:outline-none text-center w- rounded-full p-2"
+              className=" focus:outline-none  text-center  "
               type="text"
               placeholder=" Donde Estas?"
+              
             />
+            <IoLocationSharp className="text-blue-600 text-[20px]" />
+
           </div>
         </div>
       </section>
