@@ -1,6 +1,9 @@
+import SectionRegistro1 from "../../../components/components - Registro/components/Section - Registro1";
 
 export default function Registro() {
   return (
-    <div>Registro</div>
+    <section>
+      <SectionRegistro1/>
+    </section>
   )
 }
