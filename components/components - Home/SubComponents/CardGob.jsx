@@ -8,7 +8,7 @@ export default function CardGob() {
   return (
     <article className={`bg-white border border-blue-200 rounded-2xl shadow-lg md:max-w-sm flex flex-col gap-4 p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ${roboto}`}>
       <header className="flex flex-col items-center gap-3">
-        <div className="w-full h-40 md:h-56 rounded-xl overflow-hidden bg-blue-100 flex items-center justify-center shadow-md mb-2 relative group">
+        <div className="w-full h-40 md:h-56  overflow-hidden flex items-center justify-center shadow-md mb-2 relative group">
           <Image src={ImgPrueba} alt="Punto Gob Sambil" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent opacity-70 group-hover:opacity-80 transition-opacity duration-300 rounded-xl"></div>
         </div>
