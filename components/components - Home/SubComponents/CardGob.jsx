@@ -6,7 +6,7 @@ const roboto = Roboto()
 
 export default function CardGob() {
   return (
-    <article className={`border border-gray-400 w-[28%] p-5 rounded-xl flex flex-col gap-1  min-w-80 ${roboto}`}>
+    <article className={`border border-gray-400 w-[28%] p-5 rounded-xl flex flex-col gap-1 ${roboto}`}>
         <header className="flex flex-col gap-2">
             <span className="text-[#0088FF] font-semibold">Punto Gob - Sambil</span>
             <Image src={ImgPrueba} className="rounded-md"/>

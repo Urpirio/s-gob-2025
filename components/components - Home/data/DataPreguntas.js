@@ -6,12 +6,12 @@ export const DataPreguntas = [
     },
     {
         key: 2,
-        Pregunta: '¿Que pasa si cancelo mi cita?',
+        Pregunta: '¿Qué pasa si cancelo mi cita?',
         Respuesta: ''
     },
     {
         key: 3,
-        Pregunta: '¿Puedo cambiar mi cita hacia otra gestion?',
+        Pregunta: '¿Puedo cambiar mi cita hacia otra gestión?',
         Respuesta: ''
     },
     {
@@ -21,12 +21,12 @@ export const DataPreguntas = [
     },
     {
         key: 5,
-        Pregunta: '¿Puedo cambiar mi cita hacia una nueva institucion?',
+        Pregunta: '¿Puedo cambiar mi cita hacia una nueva institución?',
         Respuesta: ''
     },
     {
         key: 6,
-        Pregunta: '¿Que pasa si llego tarde?',
+        Pregunta: '¿Qué pasa si llego tarde?',
         Respuesta: ''
     },
     {
