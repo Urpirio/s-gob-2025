@@ -1,5 +1,6 @@
 import Footer from "../../components/components - globals/Footer"
 import Header from "../../components/components - globals/Header"
+import SectionInputSearch from "../../components/components - Home/components/Section - InputSearch"
 import SectionPreguntas from "../../components/components - Home/components/Section - Preguntas"
 import SectionPuntoGob from "../../components/components - Home/components/Section - PuntoGob"
 import SectionSearch from "../../components/components - Home/components/Section - Search"
@@ -13,6 +14,7 @@ export default function Home() {
         <Header/>
         <main>
             <SectionSearch/>
+            <SectionInputSearch/>
             <SectionServicios/>
             <SectionPuntoGob/>
             <SectionTramites/>
