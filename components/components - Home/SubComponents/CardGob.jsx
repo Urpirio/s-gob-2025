@@ -30,6 +30,7 @@ export default function CardGob() {
             <button className="bg-[#D9D9D9] text-[#1369CC]">Detalles</button>
             <button className="bg-[#1369CC] text-white">solicitar servicio</button>
         </footer>
-    </article>
+        </article>
+
   )
 }

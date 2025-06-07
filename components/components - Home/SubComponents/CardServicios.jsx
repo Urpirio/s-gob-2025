@@ -1,25 +1,21 @@
 import Image from "next/image";
 import LogoGOB from '@/../public/img - Home/image 4 (1).png';
+import { CiBookmark } from "react-icons/ci";
 
 export default function CardServicios() {
   return (
-    <article className="bg-white border border-blue-200 rounded-2xl shadow-lg max-w-xs md:max-w-sm flex flex-col gap-4 p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-      <header className="flex flex-col items-center gap-3">
-        <div className="w-full rounded-xl overflow-hidden bg-gradient-to-tr from-blue-100 to-blue-50 flex items-center justify-center shadow-md mb-2">
-          <Image src={LogoGOB} alt="Logo Servicio" className="object-contain w-24 md:w-32 mx-auto" />
-        </div>
+    <article className="bg-white p-[20px]  w-[418px] items-center h-[194px] rounded-2xl shadow-2xl">
+      <header className="flex gap-5 items-center justify-between">
+        <Image className="w-[143px]" src={LogoGOB}></Image>
+         <CiBookmark className="w-[24px] h-[24px]" />
       </header>
-      <main className="flex flex-col gap-2">
-        <h1 className="text-xl md:text-2xl font-bold text-blue-900 text-center">Punto Gob - Sambil</h1>
-        <p className="text-gray-600 text-sm md:text-base text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis 
-          explicabo, eligendi aliquam ut perspiciatis quis sint velit odio?
-          Exercitationem, iusto at natus porro ad rem.
-        </p>
+      <main> 
+        <h1 className="font-semibold">punto Gob-Sambil</h1>
+        <p className="w-[334px] text-[13px] text-neutral-700">Ciudadano, moderno, eficaz, eficiente, productivo, participativo y dinámico, incorporando el uso de los recursos de información para la prestación de los servicios</p>
+
       </main>
-      <footer className="flex justify-center gap-2 mt-2">
-        <button className="bg-gradient-to-r from-blue-100 to-blue-300 text-blue-700 font-semibold w-1/2 py-2 rounded-xl shadow hover:from-blue-200 hover:to-blue-400 transition-all">Detalles</button>
-        <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold w-1/2 py-2 rounded-xl shadow hover:from-blue-600 hover:to-blue-800 transition-all">Solicitar servicio</button>
+      <footer className="flex items-center justify-end pl-1.5">
+        <button className= " mt-4 bg-blue-500 bg-gradient-to-tl to-blue-400 from-blue-700 rounded-[4px] w-[113px] text-white ">solicitar</button>
       </footer>
     </article>
   )
