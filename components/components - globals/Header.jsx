@@ -2,7 +2,7 @@ import Link from "next/link";
 import { TbWorld } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
 
-
+// Javier por favor no toquees el header, -> nota: es responsive.
 export default function Header() {
   return (
     <header className="flex justify-between items-center shadow-2xs px-5 py-4">
