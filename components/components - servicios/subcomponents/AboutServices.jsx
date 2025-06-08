@@ -6,24 +6,9 @@ import { FaRegClock } from "react-icons/fa6";
 import { TbWorldWww } from "react-icons/tb";
 import { FaArrowDown } from "react-icons/fa6";
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-
 
 
 export default function AboutServices({Data}) {
-
-    
-
-    const Path = () =>{
-        const router = useRouter();
-        // alert('funciona')
-        router.push('/AgendarCita');
-        
-        // console.log('funcona')
-    };
-
-
-
 
   return (
     <article className='flex flex-col justify-between h-[100%] py-5'>
