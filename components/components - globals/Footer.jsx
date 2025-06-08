@@ -1,4 +1,3 @@
-import React from 'react'
 import CupulaLogo from '@/../public/img - Home/Cupula.92806960.svg';
 import OgticLogo from '@/../public/img - Home/logoOgtic.ac56395c.svg';
 
