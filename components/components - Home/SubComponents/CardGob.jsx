@@ -3,15 +3,17 @@ import ImgPrueba from '@/../public/img - Home/Punto-Gob-Sambil.jpg'
 import { Roboto } from "next/font/google";
 import { DataCardPuntoGob } from "../data/DataCardPuntoGob";
 
-const roboto = Roboto()
+const roboto = Roboto({
+    subsets: ['latin-ext']
+});
 
 export default function CardGob() {
   const CardG = DataCardPuntoGob.map(Data =>{
     return (
-    <article key={Data.key} className={`border border-gray-300 w-[35%] max-w-100 min-w-90 p-5 rounded-xl flex flex-col gap-1 ${roboto} shadow-2xs`}>
+    <article key={Data.key} className={`border border-gray-300 w-[35%] max-w-100 min-w-90 p-5 rounded-xl flex flex-col gap-1 ${roboto.className} shadow-2xs`}>
         <header className="flex flex-col gap-2">
             <span className="text-[#0088FF] font-semibold">{Data.NombreGob}</span>
-            <Image src={ImgPrueba} className="rounded-md"/>
+            <Image src={ImgPrueba} className="rounded-md" alt={Data.NombreGob}/>
             <span className="text-gray-500">{Data.Distancia}</span>
         </header>
         <main>
