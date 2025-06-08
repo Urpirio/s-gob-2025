@@ -4,13 +4,17 @@ import Image from 'next/image';
 import { CiBookmark } from "react-icons/ci";
 import { DataCardServices } from '../data/DataCardServices';
 
+
+
 export default function CardServicios({ChangeAboutS}) {
 
+//  const router = useRouter();
 
  const Card = DataCardServices.map(Data =>{
 
     const CGA = () =>{
-        ChangeAboutS(Data)
+        ChangeAboutS(Data);
+        
     };
 
     return (
@@ -28,7 +32,7 @@ export default function CardServicios({ChangeAboutS}) {
             </p>
         </main>
         <footer className=' flex justify-end'>
-            <button className='text-white font-semibold p-2 rounded-xl bg-[#0088FF]' 
+            <button  className='text-white font-semibold p-2 rounded-xl bg-[#0088FF]' 
                 onClick={CGA}>
                 Solicitar servicio
             </button>
