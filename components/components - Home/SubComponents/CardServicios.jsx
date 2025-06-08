@@ -6,7 +6,7 @@ export default function CardServicios() {
   return (
     <article className="bg-white p-[20px]  w-[418px] items-center h-[194px] rounded-2xl shadow-2xl">
       <header className="flex gap-5 items-center justify-between">
-        <Image className="w-[143px]" src={LogoGOB}></Image>
+        <Image className="w-[143px]" src={LogoGOB} alt="Logo"></Image>
          <CiBookmark className="w-[24px] h-[24px]" />
       </header>
       <main> 
