@@ -5,7 +5,7 @@ export default function EscribirPreguntas() {
   return (
     <div>
         <div className="flex flex-col items-center justify-center gap-2 pb-2">
-            <Image src={ImgPreguntas}/>
+            <Image src={ImgPreguntas} alt=""/>
             <h1 className="text-3xl">¿Alguna pregunta?</h1>
             <span className="font-extralight text-xl">Puedes preguntar lo que quieras, estamos para aclarar tus dudas. </span>
         </div>
