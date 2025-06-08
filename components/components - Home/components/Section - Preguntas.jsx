@@ -1,6 +1,7 @@
 import { Albert_Sans } from "next/font/google";
 import EscribirPreguntas from "../SubComponents/EscribirPreguntas";
 import Preguntas from "../SubComponents/Preguntas";
+import { List, ListItemButton,Collapse } from "@mui/material";
 
 const albertsans = Albert_Sans()
 
@@ -11,9 +12,9 @@ export default function SectionPreguntas() {
             <h1 className="text-5xl">Preguntas frecuentes</h1>
         </div>
         <section className="flex justify-around">
-            <div className="w-[45%] flex items-center flex-col gap-2 pt-10">
+            <List className="w-[45%] flex flex-col justify-center gap-1">
                 <Preguntas/>
-            </div>
+            </List>
             <div className="w-[45%] ">
                 <EscribirPreguntas/>
             </div>
