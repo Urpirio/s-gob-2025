@@ -8,12 +8,12 @@ export const DataCardServices = [
         los recursos de información para la prestación de
         los servicios`,
         SolicitarServicio: ()=>{
-
+            
         },
-         Data: [
+         Data: 
             {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -47,7 +47,7 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
+   
     },
     {
         key: 2,
@@ -60,10 +60,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -97,7 +96,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 3,
@@ -110,10 +108,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -147,7 +144,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 4,
@@ -160,10 +156,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -197,7 +192,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 5,
@@ -210,10 +204,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data:{
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -247,7 +240,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 6,
@@ -260,10 +252,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data:{
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -297,7 +288,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 7,
@@ -310,10 +300,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -347,7 +336,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 8,
@@ -360,10 +348,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-        Data: [
-            {
+        Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -397,7 +384,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 9,
@@ -410,10 +396,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -447,7 +432,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 10,
@@ -460,10 +444,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -497,7 +480,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 11,
@@ -510,10 +492,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -547,7 +528,6 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
     {
         key: 12,
@@ -560,10 +540,9 @@ export const DataCardServices = [
         SolicitarServicio: ()=>{
 
         },
-         Data: [
-            {
+         Data: {
                 Ubicacion: 'Punto GOB Sambil - SD',
-                Link: 'puntos.gob.do',
+                Link: 'Puntos.gob.do',
                 Horario: 'Lunes a Viernes - 8am - 7pm ',
                 DescripcionInstitucion: `Tenemos como objetivo vigilar el
                 cumplimiento de la Constitución, las leyes, las decisiones
@@ -597,6 +576,5 @@ export const DataCardServices = [
                 ]
 
             }
-        ]
     },
 ]
