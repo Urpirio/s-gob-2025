@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 // Javier por favor no toquees el header, -> nota: es responsive.
 export default function Header() {
   return (
-    <header className="flex justify-between items-center shadow-2xs px-5 py-4">
+    <header className="flex justify-between items-center shadow-2xs px-5 py-4 sticky top-0 bg-white z-50">
       <div className="flex flex-grow justify-start  w-[30%]">
         <h1 className="text-2xl font-bold">LOGO</h1>
       </div>
