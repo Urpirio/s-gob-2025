@@ -3,11 +3,13 @@ import EscribirPreguntas from "../SubComponents/EscribirPreguntas";
 import Preguntas from "../SubComponents/Preguntas";
 import { List, ListItemButton,Collapse } from "@mui/material";
 
-const albertsans = Albert_Sans()
+const albertsans = Albert_Sans({
+  subsets: ['latin-ext']
+});
 
 export default function SectionPreguntas() {
   return (
-    <section className={`flex flex-col p-5 ${albertsans}`}>
+    <section className={`flex flex-col p-5 ${albertsans.className}`}>
         <div className="flex justify-center p-5">
             <h1 className="text-5xl">Preguntas frecuentes</h1>
         </div>
