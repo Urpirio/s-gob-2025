@@ -13,18 +13,17 @@ export default function SectionTramites() {
   return (
     <section className=" flex flex-col">
         <div className={`${Albert_sans} text-5xl justify-center flex`}>
-                <h1 className="">Tus trámites., sin vueltas</h1>
+                <h1 className="">Tus tramites, sin vueltas</h1>
         </div>
         <section className="relative flex ">
-            <div className=" w-[100%] justify-center flex  z-10 ">
-                <Image src={ImgBack} className="h-[100%] object-contain "/>
+            <div className=" w-[100%] justify-center items-center xl:flex  z-10 hidden ">
+                <Image src={ImgBack} className="h-[50%] object-contain "/>
             </div>
-            
-            <div className=" absolute  z-20 flex flex-col justify-around  h-[100%] w-[100%] gap-10">
-               <div className="flex justify-around w-[100%]  gap-70">
+            <div className=" xl:absolute relative  z-20 flex flex-col justify-around  h-[100%] w-[100%] gap-10 ">
+               <div className="flex justify-around w-[100%] flex-wrap ">
                 {Grupo1}
                </div> 
-               <div className="flex justify-around w-[100%] gap-70">
+               <div className="flex justify-around w-[100%] flex-wrap">
                 {Grupo2}
                </div>
             </div>
