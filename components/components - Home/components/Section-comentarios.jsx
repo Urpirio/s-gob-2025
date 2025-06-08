@@ -1,7 +1,7 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import CardComentarios from "../SubComponents/Card-comentarios";
-
+//Javier no toques nada 
 export default function SectionComentarios() {
     return(
         <section className="py-10 flex flex-col gap-10">
