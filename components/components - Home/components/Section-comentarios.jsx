@@ -14,8 +14,6 @@ export default function SectionComentarios() {
             </div>
              <div  className="flex justify-start gap-5 ">
                 <CardComentarios/>
-                <CardComentarios/>
-                <CardComentarios/>
             </div>
             <div className="flex items-center" >
                 <button className="text-6xl text-[#007AFF]"><IoIosArrowForward/></button>
