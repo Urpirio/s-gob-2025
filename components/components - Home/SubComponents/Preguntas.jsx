@@ -1,8 +1,7 @@
 'use client';
 import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowDown } from "react-icons/io";
 import { DataPreguntas } from "../data/DataPreguntas";
-import { List, ListItemButton,Collapse, ListItemText } from "@mui/material";
+import { ListItemButton,Collapse, ListItemText } from "@mui/material";
 import { useState } from "react";
 
 
