@@ -3,7 +3,9 @@ import ImgBack from '@/../public/img - Home/ImgBackground.png';
 import CardTramites from "../SubComponents/CardTramites";
 import { Albert_Sans } from "next/font/google";
 
-const Albert_sans  = Albert_Sans();
+const Albert_sans  = Albert_Sans({
+  subsets: ['latin-ext']
+});
 
 export default function SectionTramites() {
 
@@ -12,7 +14,7 @@ export default function SectionTramites() {
 
   return (
     <section className=" flex flex-col">
-        <div className={`${Albert_sans} text-5xl justify-center flex`}>
+        <div className={`${Albert_sans.className} text-5xl justify-center flex`}>
                 <h1 className="">Tus tramites, sin vueltas</h1>
         </div>
         <section className="relative flex ">
