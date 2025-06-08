@@ -1,3 +1,4 @@
+'use client';
 import ImgPrueba from '@/../public/img - servicios/image 18 (1).png';
 import Image from 'next/image';
 import { FaLocationDot } from "react-icons/fa6";
@@ -5,8 +6,25 @@ import { FaRegClock } from "react-icons/fa6";
 import { TbWorldWww } from "react-icons/tb";
 import { FaArrowDown } from "react-icons/fa6";
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+
 
 export default function AboutServices({Data}) {
+
+    
+
+    const Path = () =>{
+        const router = useRouter();
+        // alert('funciona')
+        router.push('/AgendarCita');
+        
+        // console.log('funcona')
+    };
+
+
+
+
   return (
     <article className='flex flex-col justify-between h-[100%] py-5'>
         <header className='flex flex-col gap-5'>
@@ -47,14 +65,17 @@ export default function AboutServices({Data}) {
                 <ul className='px-8'>
                     {Data.Data.ListaServicios.map( L => {
                         return(
-                            <li>{L.Servicio}</li>
+                            <li key={L.Servicio}>{L.Servicio}</li>
                         )
                     })}
                 </ul>
             </div>
         </main>
         <footer className='flex justify-center py-2'>
-            <button className='w-50 py-2 rounded-xl border text-white bg-[#0088FF]'>Agendar cita</button>
+            <Link  href={{pathname:'/AgendarCita',query: {Nombre: 'EOOO'}}} 
+                className='w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF]'>
+                <span>Agendar cita</span>
+            </Link>
         </footer>
     </article>
   )
