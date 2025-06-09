@@ -10,7 +10,7 @@ export const DataBtnSignUPWith = [
     },
     {
         key: 1,
-        Icon: <Image src={IconMicuenta}/>,
+        Icon: <Image src={IconMicuenta} alt=""/>,
         Titulo: 'Registrate con Soy yo RD!',
     }
 ];
