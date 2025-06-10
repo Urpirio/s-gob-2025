@@ -19,6 +19,10 @@ const TableHeader = () => {
 
                     <select className='text-blue-700 flex justify-center ' name="" id="">
                       <option className='' value=""></option>
+                      <option value="">ninguno</option>
+                      <option value="">activos</option>
+                      <option value="">Fallidos</option>
+                      <option value="">Procesados</option>
                     <option value="">todas</option>
                   </select> 
 
