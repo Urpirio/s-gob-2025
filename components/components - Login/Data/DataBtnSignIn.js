@@ -1,8 +1,8 @@
+import { FaGoogle } from "react-icons/fa6";
+import IconMicuenta from '@/../public/img - Login/unnamed.png';
 import Image from "next/image";
-import { FaGoogle } from "react-icons/fa";
-import IconMicuenta from '@/../public/img - Registro/unnamed.png'
 
-export const DataBtnSignUPWith = [
+export const DataBtnSignIn = [
     {
         key: 1,
         Icon: <FaGoogle className="text-[#007AFF]"/>,
@@ -13,4 +13,4 @@ export const DataBtnSignUPWith = [
         Icon: <Image src={IconMicuenta} alt=""/>,
         Titulo: 'Registrate con Soy yo RD!',
     }
-];
+]

@@ -1,3 +1,4 @@
+'use client';
 import ImgPrueba from '@/../public/img - servicios/image 18 (1).png';
 import Image from 'next/image';
 import { FaLocationDot } from "react-icons/fa6";
@@ -6,12 +7,14 @@ import { TbWorldWww } from "react-icons/tb";
 import { FaArrowDown } from "react-icons/fa6";
 import Link from 'next/link';
 
-export default function AboutServices() {
+
+export default function AboutServices({Data}) {
+
   return (
     <article className='flex flex-col justify-between h-[100%] py-5'>
         <header className='flex flex-col gap-5'>
             <div className='flex justify-center'>
-                <Image src={ImgPrueba} className='object-contain h-[70%] w-[70%]'/>
+                <Image src={ImgPrueba} alt='Prueba' className='object-contain h-[70%] w-[70%]'/>
             </div>
             <div className='flex flex-col px-5 py-2 gap-2'>
                 <div className='flex justify-between'>
@@ -27,7 +30,7 @@ export default function AboutServices() {
                 <div className='flex justify-between'>
                     <span className='flex items-center w-[45%] gap-3'>
                         <TbWorldWww  className='text-[#007AFF]'/>
-                        <Link href={''} className='text-[#007AFF]'>Puntos.gob.do</Link>
+                        <Link href={''} className='text-[#007AFF]'>{Data.Data.Link}</Link>
                     </span>
                     <span className='flex items-center w-[45%] gap-3'>
                         <FaArrowDown className='text-[#007AFF]'/>
@@ -38,30 +41,26 @@ export default function AboutServices() {
         </header>
         <main className='px-5 flex flex-col gap-10'>
             <div>
-                <p className='text-[18px]'>
-                    Tenemos como objetivo vigilar el cumplimiento de la Constitución,
-                    las leyes, las decisiones judiciales y los actos administrativos.
-                    Proteger los derechos humanos y asegurar su efectividad, con el
-                    auxilio del Defensor del Pueblo. Defender los intereses de la
-                    sociedad. Defender los intereses colectivos, en especial el ambiente.
-                </p>
+                <p className='text-[18px]'>{Data.Descripcion}</p>
             </div>
             <div>
                 <div>
                     <h1 className='text-xl font-semibold'>Servicios mas utilizados:</h1>
                 </div>
                 <ul className='px-8'>
-                    <li className=' list-disc'>Atencion de audiencia </li>
-                    <li className=' list-disc'>Atencion de audiencia </li>
-                    <li className=' list-disc'>Atencion de audiencia </li>
-                    <li className=' list-disc'>Atencion de audiencia </li>
-                    <li className=' list-disc'>Atencion de audiencia </li>
-                    <li className=' list-disc'>Atencion de audiencia </li>
+                    {Data.Data.ListaServicios.map( L => {
+                        return(
+                            <li key={L.Servicio}>{L.Servicio}</li>
+                        )
+                    })}
                 </ul>
             </div>
         </main>
         <footer className='flex justify-center py-2'>
-            <button className='w-50 py-2 rounded-xl border text-white bg-[#0088FF]'>Agendar cita</button>
+            <Link  href={{pathname:'/AgendarCita',query: {Nombre: 'EOOO'}}} 
+                className='w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF]'>
+                <span>Agendar cita</span>
+            </Link>
         </footer>
     </article>
   )
