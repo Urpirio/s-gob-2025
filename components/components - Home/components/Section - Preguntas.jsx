@@ -1,7 +1,7 @@
 import { Albert_Sans } from "next/font/google";
 import EscribirPreguntas from "../SubComponents/EscribirPreguntas";
 import Preguntas from "../SubComponents/Preguntas";
-import { List, ListItemButton,Collapse } from "@mui/material";
+import { List, ListItemButton,Collapse  } from "@mui/material";
 
 const albertsans = Albert_Sans({
   subsets: ['latin-ext']
