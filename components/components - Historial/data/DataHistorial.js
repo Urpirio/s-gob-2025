@@ -7,142 +7,62 @@ import { LuTickets } from "react-icons/lu";
 export const DataHistorial = [
     { 
         id: 1, 
-        name: (
-            <>
-                <MdOutlineCheckBoxOutlineBlank className="text-blue-700 mr-1" />
-                Cambio de Cédula
-            </>
-        ),
-        date: (
-            <>
-                <MdDateRange className="text-blue-700 mr-1" />
-                Miércoles 15 de Mayo
-            </>
-        ),
-        time: (
-            <>
-                <GoClock className="text-blue-700 mr-1" />
-                10:30 AM
-            </>
-        ),
+        icon: <MdOutlineCheckBoxOutlineBlank className="text-blue-700" />, 
+        name: "Cambio de Cédula",
+        dateIcon: <MdDateRange className="text-blue-700" />,
+        date: "Miércoles 15 de Mayo",
+        timeIcon: <GoClock className="text-blue-700" />,
+        time: "10:30 AM",
         status: 'Activa',
-        ticket: (
-            <>
-                <LuTickets className="text-blue-700 mr-1" />
-                Ver ticket
-            </>
-        )
+        ticketIcon: <LuTickets className="text-blue-700" />,
+        ticket: "Ver ticket"
     },
     { 
         id: 2, 
-        name: (
-            <>
-                <MdOutlineCheckBoxOutlineBlank className="text-blue-700 mr-2" />
-                Solicitar pasaporte
-            </>
-        ),
-        date: (
-            <>
-                <MdDateRange className="text-blue-700 mr-1" />
-                Miércoles 15 de Julio
-            </>
-        ),
-        time: (
-            <>
-                <GoClock className="text-blue-700 mr-1" />
-                10:30 AM
-            </>
-        ),
+        icon: <MdOutlineCheckBoxOutlineBlank className="text-blue-700" />, 
+        name: "Solicitar pasaporte",
+        dateIcon: <MdDateRange className="text-blue-700" />,
+        date: "Miércoles 15 de Julio",
+        timeIcon: <GoClock className="text-blue-700" />,
+        time: "10:30 AM",
         status: 'Fallido',
-        ticket: (
-            <>
-                <LuTickets className="text-blue-700 mr-1" />
-                Ver ticket
-            </>
-        )
+        ticketIcon: <LuTickets className="text-blue-700" />,
+        ticket: "Ver ticket"
     },
     { 
         id: 3, 
-        name: (
-            <>
-                <MdOutlineCheckBoxOutlineBlank className="text-blue-700 mr-2" />
-                Solicitar Cédula
-            </>
-        ),
-        date: (
-            <>
-                <MdDateRange className="text-blue-700 mr-1" />
-                Miércoles 15 de Mayo
-            </>
-        ),
-        time: (
-            <>
-                <GoClock className="text-blue-700 mr-1" />
-                11:20 AM
-            </>
-        ),
+        icon: <MdOutlineCheckBoxOutlineBlank className="text-blue-700" />, 
+        name: "Solicitar Cédula",
+        dateIcon: <MdDateRange className="text-blue-700" />,
+        date: "Miércoles 15 de Mayo",
+        timeIcon: <GoClock className="text-blue-700" />,
+        time: "11:20 AM",
         status: 'Procesado',
-        ticket: (
-            <>
-                <LuTickets className="text-blue-700 mr-1" />
-                Ver ticket
-            </>
-        )
+        ticketIcon: <LuTickets className="text-blue-700" />,
+        ticket: "Ver ticket"
     },
     { 
         id: 4, 
-        name: (
-            <>
-                <MdOutlineCheckBoxOutlineBlank className="text-blue-700 mr-2" />
-                Solicitar pasaporte
-            </>
-        ),
-        date: (
-            <>
-                <MdDateRange className="text-blue-700 mr-1" />
-                Miércoles 15 de Mayo
-            </>
-        ),
-        time: (
-            <>
-                <GoClock className="text-blue-700 mr-1" />
-                10:30 AM
-            </>
-        ),
+        icon: <MdOutlineCheckBoxOutlineBlank className="text-blue-700" />, 
+        name: "Solicitar pasaporte",
+        dateIcon: <MdDateRange className="text-blue-700" />,
+        date: "Miércoles 15 de Mayo",
+        timeIcon: <GoClock className="text-blue-700" />,
+        time: "10:30 AM",
         status: 'Fallido',
-        ticket: (
-            <>
-                <LuTickets className="text-blue-700 mr-1" />
-                Ver ticket
-            </>
-        )
+        ticketIcon: <LuTickets className="text-blue-700" />,
+        ticket: "Ver ticket"
     },
     { 
         id: 5, 
-        name: (
-            <>
-                <MdOutlineCheckBoxOutlineBlank className="text-blue-700 mr-2" />
-                Cambio de Cédula
-            </>
-        ),
-        date: (
-            <>
-                <MdDateRange className="text-blue-700 mr-1" />
-                Miércoles 15 de Mayo
-            </>
-        ),
-        time: (
-            <>
-                <GoClock className="text-blue-700 mr-1" />
-                10:30 AM
-            </>
-        ),
+        icon: <MdOutlineCheckBoxOutlineBlank className="text-blue-700" />, 
+        name: "Cambio de Cédula",
+        dateIcon: <MdDateRange className="text-blue-700" />,
+        date: "Miércoles 15 de Mayo",
+        timeIcon: <GoClock className="text-blue-700" />,
+        time: "10:30 AM",
         status: 'Activa',
-        ticket: (
-            <>
-                <LuTickets className="text-blue-700 mr-1" />
-                Ver ticket
-            </>
-        )
+        ticketIcon: <LuTickets className="text-blue-700" />,
+        ticket: "Ver ticket"
     },
   ];
