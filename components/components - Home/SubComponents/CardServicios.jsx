@@ -20,7 +20,7 @@ export default function CardServicios() {
           </p>
 
       </main>
-      <footer className="flex items-center justify-end w-[100%]">
+      <footer className="flex mt-5 items-center justify-end w-[100%]">
         <button className= " bg-blue-500  rounded-[4px] w-30 py-0.5 text-white ">Solicitar</button>
       </footer>
     </article>
