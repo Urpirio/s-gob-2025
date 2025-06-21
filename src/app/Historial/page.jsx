@@ -12,6 +12,7 @@ const HistoricalData = () => {
           <SectionTitleHistorial/>
           <SectionTableHistorial/>
         </main>
+        
     </body>
   );
 };
