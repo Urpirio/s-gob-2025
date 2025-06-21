@@ -21,9 +21,9 @@ export default function Header() {
       <div className="hidden w-[30%] justify-center lg:flex">
         <nav className="w-[100%]  flex justify-between">
           <Link href={'/'}>Inicio</Link>
-          <Link href={'/servicios'}>Servicios</Link>
-          <Link href={'/sobreNosotros'}>Sobre nosotros</Link>
-          <Link href={'/ayuda'}>Ayuda</Link>
+          <Link href={'/Servicios'}>Servicios</Link>
+          <Link href={'/SobreNosotros'}>Sobre nosotros</Link>
+          <Link href={'/Ayuda'}>Ayuda</Link>
         </nav>
       </div>
       <div className="hidden flex-grow justify-end gap-3  w-[30%] lg:flex">
@@ -42,9 +42,9 @@ export default function Header() {
       <menu id="Header-Menu-Movil" className={`border-x border-b border-gray-300 absolute top-17 shadow-2xs rounded-b-2xl right-0 w-full py-5 px-10 bg-white z-50 ${Menu ? 'block' : 'hidden'}`}>
         <div className="flex flex-col gap-5 mb-5">
           <Link href={'/'}>Inicio</Link>
-          <Link href={'/servicios'}>Servicios</Link>
-          <Link href={'/sobreNosotros'}>Sobre nosotros</Link>
-          <Link href={'/ayuda'}>Ayuda</Link>
+          <Link href={'/Servicios'}>Servicios</Link>
+          <Link href={'/SobreNosotros'}>Sobre nosotros</Link>
+          <Link href={'/Syuda'}>Ayuda</Link>
         </div>
         <div className="flex flex-col gap-3">
         <button className="bg-primary py-2 px-5 rounded-2xl text-white">Iniciar sesion</button>
