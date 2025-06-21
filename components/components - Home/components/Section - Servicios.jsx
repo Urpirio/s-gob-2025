@@ -19,6 +19,8 @@ export default function SectionServicios() {
             <CardServicios/>
             <CardServicios/>
             <CardServicios/>
+            <CardServicios/>
+            <CardServicios/>
         </div>
     </section>
   )
