@@ -1,7 +1,7 @@
 
 export default function SectionSearch() {
   return (
-    <section className="py-10 flex flex-col items-center justify-center gap-5">
+    <section className="py-10 h-[50vh] flex flex-col items-center justify-center gap-5">
       <div className="text-center w-[40%] min-w-90">
         <h1 className=" text-4xl lg:text-6xl">
           Hola, ¿Que vamos 
