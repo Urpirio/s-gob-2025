@@ -1,4 +1,4 @@
-import Header from "../../../components/components - globals/Header";
+import Header from "../../../components/components - globals/components/Header";
 import SectionLogin from "../../../components/components - Login/components/Section - Login";
 import ImgRegistro from '@/../public/img - Login/Sign up-rafiki 1.png';
 import Image from "next/image";
