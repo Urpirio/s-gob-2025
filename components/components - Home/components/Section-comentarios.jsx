@@ -15,7 +15,7 @@ export default function SectionComentarios() {
             </div>
            <div className="w-[100%] flex justify-around items-center lg:justify-center relative  lg:gap-10 ">
             <div className="flex  items-center w-full h-1/2 lg:w-[10%] justify-start ">
-                <button onClick={()=>{Navigate({Right: false,Left: true})}} className=" absolute text-6xl text-[#007AFF]">
+                <button onClick={()=>{Navigate({Right: false,Left: true,IdContainer: 'CardContainer'})}} className=" absolute text-6xl text-[#007AFF]">
                     <IoIosArrowBack/>
                 </button>
             </div>
@@ -23,7 +23,7 @@ export default function SectionComentarios() {
                 <CardComentarios/>
             </div>
             <div  className=" flex  items-center w-full h-1/2 lg:w-[10%] justify-end " >
-                <button onClick={()=>{Navigate({Right: true,Left: false})}} className=" absolute text-6xl text-[#007AFF]">
+                <button onClick={()=>{Navigate({Right: true,Left: false,IdContainer: 'CardContainer'})}} className=" absolute text-6xl text-[#007AFF]">
                     <IoIosArrowForward/>
                 </button>
             </div>

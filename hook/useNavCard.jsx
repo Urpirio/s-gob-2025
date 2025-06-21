@@ -3,8 +3,8 @@ import { DataCardComentarios } from "../components/components - Home/data/DataCa
 
 export const useNavCard = () => {
 
-    const Navigate = ({Right,Left}) => {
-      const CardContainer = document.getElementById('CardContainer');
+    const Navigate = ({Right,Left,IdContainer}) => {
+      const CardContainer = document.getElementById(IdContainer);
       if(CardContainer.scrollLeft === 0 &&Right){
         CardContainer.scrollTo({left: 300, behavior: 'smooth'});
       }else if(CardContainer.scrollLeft === 300 && Right){
