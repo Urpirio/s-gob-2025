@@ -1,5 +1,5 @@
 
-import Header from '../../../components/components - globals/Header';
+import Header from '../../../components/components - globals/components/Header';
 import SectionTitleHistorial from '../../../components/components - Historial/components/Section - TitleHistorial';
 import SectionTableHistorial from '../../../components/components - Historial/components/Section - TableHistorial';
 
