@@ -1,5 +1,5 @@
-import Footer from "../../../components/components - globals/Footer";
-import Header from "../../../components/components - globals/Header";
+import Footer from "../../../components/components - globals/components/Footer";
+import Header from "../../../components/components - globals/components/Header";
 import SectionPerfil from "../../../components/components - perfil/Components/Section - Perfil";
 import SectionTitle from "../../../components/components - perfil/Components/Section - Title";
 import { Albert_Sans } from "next/font/google";
