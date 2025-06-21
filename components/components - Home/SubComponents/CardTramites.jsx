@@ -9,7 +9,7 @@ export default function CardTramites() {
         return (
              <article key={Data.Key} className=" w-70 flex flex-col  ">
                 <header>
-                    <div className={` p-5 ${Data.Stylenumero} text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
+                    <div className={` p-5 ${Data.Stylenumero} flex-shrink-0 text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
                         <span className="text-5xl font-black ">{Data.numero}</span>
                     </div>
                 </header>
@@ -25,7 +25,7 @@ export default function CardTramites() {
         return (
              <article key={Data.Key} className=" w-70 flex flex-col  justify-between">
                 <header>
-                    <div className={` p-5 ${Data.Stylenumero} text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
+                    <div className={` p-5 ${Data.Stylenumero} flex-shrink-0 text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
                         <span className="text-5xl font-black ">{Data.numero}</span>
                     </div>
                 </header>

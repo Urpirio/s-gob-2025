@@ -10,11 +10,11 @@ const albertsans = Albert_Sans({
 
 export default function SectionServicios() {
   return (
-    <section className='flex flex-col gap-20 pt-10 pb-10 bg-[#EFEFEF]'>
+    <section className='flex flex-col gap-10 lg:gap-20 pt-10 pb-10 bg-[#EFEFEF]'>
         <div className='text-center'>
             <h1  className={`text-4xl lg:text-6xl font-semibold ${albertsans.className}`} >Servicios más utilizados</h1>
         </div>
-        <div className='flex gap-5 p-5 overflow-x-scroll ' style={{scrollbarWidth:'none',scrollbarColor:'blue'}} >
+        <div className='flex gap-5 px-5 overflow-x-scroll ' style={{scrollbarWidth:'none',scrollbarColor:'blue'}} >
             <CardServicios/>
             <CardServicios/>
             <CardServicios/>
