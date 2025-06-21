@@ -5,8 +5,8 @@ import { FaLocationDot } from "react-icons/fa6";
 //Javier no toque esto, voy a agregar nuevas funciones despues de que termine las demas partes
 export default function SectionInputSearch() {
   return (
-    <section className="flex justify-center flex-wrap items-center py-10 gap-5">
-        <div className=" flex items-center flex-shrink-1  gap-5 p-1 sm:p-3 bg-[#F3F3F3] rounded-4xl">
+    <section className="flex justify-center flex-wrap items-center py-10 gap-5 px-1 lg:px-0">
+        <div className=" flex items-center flex-shrink-1 gap-1 lg:gap-5 p-2 sm:p-3 bg-[#F3F3F3] rounded-4xl">
             <span className=" p-1 flex-shrink-0 rounded-[100%] h-10 w-10 flex justify-center items-center bg-[#0088FF]">
                 <RiSearchLine className="text-white text-2xl"/>
             </span>
