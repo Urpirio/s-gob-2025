@@ -7,7 +7,7 @@ export default function SectionRegistro1() {
   return (
     <section className='flex flex-col gap-5'>
       <div className='flex flex-col justify-center items-center gap-1'>
-        <h1 className='text-6xl text-[#007AFF]'>Crea una cuenta</h1>
+        <h1 className='text-6xl text-primary'>Crea una cuenta</h1>
         <span className='text-3xl font-light'>Elige como quieres registrarte</span>
       </div>
       <div className='flex flex-col items-center gap-3 '>
@@ -25,7 +25,7 @@ export default function SectionRegistro1() {
         pr-5 
         gap-2 
         rounded-xl 
-        bg-[#007AFF]
+        bg-primary
         text-white
         ' href={'/Registro/R2'}>
             <span className='font-semibold'>Siguiente</span>

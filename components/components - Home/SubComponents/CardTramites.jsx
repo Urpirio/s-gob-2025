@@ -15,7 +15,7 @@ export default function CardTramites() {
                 </header>
                 <main className="flex flex-col gap-2">
                      <h1 className="text-3xl font-semibold">{Data.titulo}</h1>
-                    <p className="text-[18px] text-[#686868]">{Data.descripcion}</p>
+                    <p className="text-[18px] text-gray-500">{Data.descripcion}</p>
                 </main>
             </article>
         )
@@ -31,7 +31,7 @@ export default function CardTramites() {
                 </header>
                 <main className="flex flex-col gap-2">
                      <h1 className="text-3xl font-semibold">{Data.titulo}</h1>
-                    <p className="text-[18px] text-[#686868]">{Data.descripcion}</p>
+                    <p className="text-[18px] text-gray-500">{Data.descripcion}</p>
                 </main>
             </article>
         )

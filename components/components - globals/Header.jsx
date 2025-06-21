@@ -18,8 +18,8 @@ export default function Header() {
         </nav>
       </div>
       <div className="hidden flex-grow justify-end gap-3  w-[30%] lg:flex">
-        <button className="bg-[#0088FF] py-2 px-5 rounded-2xl text-white">Iniciar sesion</button>
-        <button className="bg-[#D9D9D9] py-2 px-5 rounded-2xl text-gray-700">Regitrarse</button>
+        <button className="bg-primary py-2 px-5 rounded-2xl text-white">Iniciar sesion</button>
+        <button className="bg-gray-100 py-2 px-5 rounded-2xl text-gray-700">Regitrarse</button>
         <button className="flex gap-1 items-center text-2xl">
           <TbWorld/>
           <IoIosArrowDown/>

@@ -30,7 +30,7 @@ export default function EscribirPreguntas() {
 
         ">
             <input type="text" placeholder="Escribe tu pregunta y presiona enter" />
-            <button className="bg-[#0088FF] text-white font-semibold">Enviar</button>
+            <button className="bg-primary text-white font-semibold">Enviar</button>
         </div>
     </div>
   )

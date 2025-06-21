@@ -14,7 +14,7 @@ export default function CardRegistro1() {
     p-5
     shadow-md
     ">
-        <div className="flex items-center text-4xl text-[#0088FF] font-semibold">
+        <div className="flex items-center text-4xl text-secondary font-semibold">
             {Data.Icon}
             <span>{Data.Titulo}</span>
         </div>

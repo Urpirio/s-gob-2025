@@ -27,8 +27,8 @@ export default function CardGob() {
         [&footer>button]:rounded-md
         [&footer>button]:
         ">
-            <button className="bg-[#D9D9D9] text-sm xxl:text-base text-[#1369CC]">Detalles</button>
-            <button className="bg-[#1369CC] text-sm xxl:text-base text-white">solicitar servicio</button>
+            <button className="bg-gray-100 text-sm xxl:text-base text-primary-light">Detalles</button>
+            <button className="bg-primary-light text-sm xxl:text-base text-white">solicitar servicio</button>
         </footer>
         </article>
 

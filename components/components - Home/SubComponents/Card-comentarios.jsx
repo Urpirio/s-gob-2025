@@ -40,7 +40,7 @@ export default function CardComentarios() {
                 {Data.Comment}
             </p>
         </main>
-        <footer className="flex items-center justify-end text-2xl gap-1 text-[#007AFF]">
+        <footer className="flex items-center justify-end text-2xl gap-1 text-primary">
             {Star.map(D =>{
                 return(D)
             })}

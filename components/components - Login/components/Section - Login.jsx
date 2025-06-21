@@ -7,7 +7,7 @@ export default function SectionLogin() {
   return (
     <section className='flex flex-col gap-10'>
       <div className='flex flex-col justify-center items-center gap-1'>
-        <h1 className='text-6xl text-[#007AFF]'>Bienvenido de nuevo</h1>
+        <h1 className='text-6xl text-primary'>Bienvenido de nuevo</h1>
         <span className='text-3xl font-light'>Ahora es mas facil, gracias por volver</span>
       </div>
       <div className="flex items-center justify-between gap-1">
@@ -52,7 +52,7 @@ export default function SectionLogin() {
         pr-5 
         gap-2 
         rounded-xl 
-        bg-[#007AFF]
+        bg-primary
         text-white
         ' href={'/Registro'}>
             <span className='font-semibold'>Iniciar Sesion</span>
