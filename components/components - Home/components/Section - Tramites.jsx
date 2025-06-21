@@ -14,7 +14,7 @@ export default function SectionTramites() {
 
   return (
     <section className=" flex flex-col">
-        <div className={`${Albert_sans.className} justify-center flex mb-10`}>
+        <div className={`${Albert_sans.className} justify-center flex mb-10 px-5 lg:px-0`}>
                 <h1 className="text-center text-4xl lg:text-5xl">Tus tramites, sin vueltas</h1>
         </div>
         <section className="relative flex ">
