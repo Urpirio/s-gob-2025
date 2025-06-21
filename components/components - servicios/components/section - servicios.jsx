@@ -3,17 +3,17 @@ import AboutServices from "../subcomponents/AboutServices";
 import CardServicios from "../subcomponents/CardServicios";
 import {  Func_AboutServices } from "../func/Func - AboutServices";
 
+export let SetStateAbout;
 export default function SectionServicios() {
 
   const {ChangeAboutS,DataAboutServicies,StateAbout,setStateAbout} = Func_AboutServices();
+  SetStateAbout = setStateAbout;
 
-  
 
 
   return (
-    <section className="bg-[#F3F3F3] flex justify-center" >
-        <div className={`flex flex-wrap justify-center py-5 gap-5  max-w-400 ${StateAbout ? "overflow-y-scroll h-[100vh]" : ''} `} 
-          style={{scrollbarWidth:'none',scrollbarColor:'blue'}}>
+    <section className="bg-[#F3F3F3] flex" >
+        <div className={`${screen.width < 667 ? StateAbout ? 'hidden' : 'flex' : 'flex'} flex-wrap scrollbar-hide justify-center py-5 gap-5  lg:px-0 ${StateAbout ? "overflow-y-scroll h-[100vh]  min-w-90 " : 'w-full'} `} >
             <CardServicios ChangeAboutS={
               (Dt)=>{
                 ChangeAboutS({Data:Dt})
@@ -21,9 +21,9 @@ export default function SectionServicios() {
               }
             }/>
         </div>
-          {StateAbout ? <div className={` w-[200%] bg-white`} >
-          <AboutServices Data={DataAboutServicies}/>
-          </div> : ''}
+          <div className={`border min-w-90 border-black ${StateAbout ? 'flex ' : 'hidden'} bg-white border-y border-gray-300 px-5`} >
+          {StateAbout ? <AboutServices Data={DataAboutServicies}/> : <div/>}
+          </div> 
     </section>
   )
 }
