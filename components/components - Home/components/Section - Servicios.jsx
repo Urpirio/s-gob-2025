@@ -12,7 +12,7 @@ export default function SectionServicios() {
   return (
     <section className='flex flex-col gap-20 pt-10 pb-10 bg-[#EFEFEF]'>
         <div className='text-center'>
-            <h1  className={`text-6xl font-semibold ${albertsans.className}`} >Servicios más utilizados</h1>
+            <h1  className={`text-4xl lg:text-6xl font-semibold ${albertsans.className}`} >Servicios más utilizados</h1>
         </div>
         <div className='flex gap-5 p-5 overflow-x-scroll ' style={{scrollbarWidth:'none',scrollbarColor:'blue'}} >
             <CardServicios/>
