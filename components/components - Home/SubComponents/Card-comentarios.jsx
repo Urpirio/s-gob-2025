@@ -19,7 +19,7 @@ export default function CardComentarios() {
         };
 
         return(
-    <article key={Data.key} className="flex flex-col gap-10 border border-gray-300 w-90 p-5 rounded-2xl">
+    <article key={Data.key} className="flex flex-col gap-10 border border-gray-300 w-90 p-5 rounded-2xl min-w-70">
         <header className="flex items-center gap-5">
             <div className="
             [&div>img]:h-20
