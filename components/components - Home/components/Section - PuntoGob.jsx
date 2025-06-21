@@ -12,7 +12,7 @@ export default function SectionPuntoGob() {
             <h1 className={`${Albert_sans.className} text-4xl lg:text-6xl font-semibold`}>Instituciones afiliadas</h1>
             <span className={`${Albert_sans.className} font-extralight text-2xl lg:text-4xl`}>Transformando la gestión pública contigo.</span>
         </div>
-        <div className="flex flex-wrap justify-center xxl:justify-around p-2 gap-5 xxl:gap-0">
+        <div className="flex overflow-x-scroll  justify-start lg:justify-around p-2 gap-5 xxl:gap-0">
             <CardGob/>
         </div>
     </section>
