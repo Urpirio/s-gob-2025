@@ -5,6 +5,8 @@ const Btns = DataBtnSignIn .map(Data =>{
     return (
     <button key={Data.key} 
     className="flex
+    text-sm
+    lg:text-base
     items-center
     gap-2
     border
