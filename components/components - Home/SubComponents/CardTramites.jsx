@@ -7,7 +7,7 @@ export default function CardTramites() {
 
     const Grupo1 =  DataCardTramites.map(Data =>{
         return (
-             <article key={Data.Key} className=" w-70 flex flex-col  ">
+             <article key={Data.Key} className=" w-70 flex flex-col gap-3 ">
                 <header>
                     <div className={` p-5 ${Data.Stylenumero} flex-shrink-0 text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
                         <span className="text-5xl font-black ">{Data.numero}</span>
@@ -23,7 +23,7 @@ export default function CardTramites() {
 
     const Grupo2 =  DataCardTramites2.map(Data =>{
         return (
-             <article key={Data.Key} className=" w-70 flex flex-col  justify-between">
+             <article key={Data.Key} className=" w-70 flex flex-col gap-3  justify-between">
                 <header>
                     <div className={` p-5 ${Data.Stylenumero} flex-shrink-0 text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
                         <span className="text-5xl font-black ">{Data.numero}</span>
