@@ -1,5 +1,4 @@
 'use client';
-// import Btn_SignUp_With from "../subcomponents/Btn-SignUp-With";
 import Link from "next/link";
 import BtnSignIn from "../SubComponents/BtnSignIn";
 
@@ -7,10 +6,10 @@ export default function SectionLogin() {
   return (
     <section className='flex flex-col gap-10'>
       <div className='flex flex-col justify-center items-center gap-1'>
-        <h1 className='text-6xl text-primary'>Bienvenido de nuevo</h1>
-        <span className='text-3xl font-light'>Ahora es mas facil, gracias por volver</span>
+        <h1 className='text-6xl text-primary text-center'>Bienvenido de nuevo</h1>
+        <span className='text-3xl font-light text-center'>Ahora es mas facil, gracias por volver</span>
       </div>
-      <div className="flex items-center justify-between gap-1">
+      <div className="flex items-center justify-center gap-1 px-5 lg:px-0">
         <BtnSignIn/>
       </div>
       <div className="flex justify-center items-center">
@@ -18,6 +17,8 @@ export default function SectionLogin() {
         <span className="absolute bg-white p-1 text-gray-400 font-semibold">O usa tu correo</span>
       </div>
       <form className="
+      px-5 
+      lg:px-0
       flex
       flex-col
       gap-5
