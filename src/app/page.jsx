@@ -13,15 +13,13 @@ import { SetMenu } from "../../components/components - globals/components/Header
 
 export default function Home() {
 
-  const Close_Movil_Menu = () => {
-   SetMenu(false);
-  }
+  // const Close_Movil_Menu = () => {
+  //  SetMenu(false);
+  // }
 
 
   return (
-    <body onTouchMove={()=>{
-      Close_Movil_Menu();
-    }}>
+    <body onTouchMove={()=>{SetMenu()}}>
         <Header/>
         <main>
             <SectionSearch/>
