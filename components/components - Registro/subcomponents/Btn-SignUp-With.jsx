@@ -6,11 +6,14 @@ export default function Btn_SignUp_With() {
     return (
     <button key={Data.key} 
     className="flex
+    text-sm
+    lg:text-base
     items-center
     gap-2
     border
     border-gray-300
-    p-3
+    p-2
+    lg:p-3
     rounded-md
     flex-grow
     flex-basis-0
