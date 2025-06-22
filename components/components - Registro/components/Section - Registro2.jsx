@@ -7,17 +7,15 @@ export default function SectionRegistro2() {
   return (
     <section className='flex flex-col gap-10'>
       <div className='flex flex-col justify-center items-center gap-1'>
-        <h1 className='text-6xl text-primary'>Crea una cuenta</h1>
-        <span className='text-3xl font-light'>Completa con los datos requeridos</span>
+        <h1 className='text-6xl text-primary text-center'>Crea una cuenta</h1>
+        <span className='text-3xl font-light text-center'>Completa con los datos requeridos</span>
       </div>
-      <div className="flex items-center justify-between gap-1">
+      <div className="flex items-center justify-center gap-1 px-5 lg:px-0">
         <Btn_SignUp_With/>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="bg-gray-300  h-[0.5px] w-[100%]"></div>
-        <span className="absolute bg-white p-1 text-gray-400 font-semibold">O usa tu correo</span>
-      </div>
       <form className="
+      px-5 
+      lg:px-0
       flex
       flex-col
       gap-5
