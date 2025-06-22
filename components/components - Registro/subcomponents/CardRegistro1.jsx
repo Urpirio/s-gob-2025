@@ -9,7 +9,7 @@ export default function CardRegistro1() {
     flex 
     flex-col  
     border-gray-300 
-    w-100 
+    w-80 
     rounded-xl 
     p-5
     shadow-md
