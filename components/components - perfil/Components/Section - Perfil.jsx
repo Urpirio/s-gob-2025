@@ -1,8 +1,8 @@
 
 export default function SectionPerfil() {
   return (
-    <section className="flex justify-center pb-10 gap-5">
-        <div className="flex flex-col w-[45%]  px-10 py-5 gap-4">
+    <section className="flex flex-wrap justify-center pb-10 gap-5">
+        <div className="flex flex-col w-[45%] min-w-90 md:min-w-100  px-10 py-5 gap-4">
             <div className="flex flex-col gap-3">
                 <label htmlFor="" className="font-semibold text-xl">Nombres</label>
                 <input type="text" placeholder="John Doe" className="p-3  bg-gray-100 rounded-md outline-0" disabled />
@@ -20,7 +20,7 @@ export default function SectionPerfil() {
                 <input type="text" placeholder="Calle ej. #1, Provincia, Pais. " className="p-3  bg-gray-100 rounded-md outline-0" disabled/>
             </div>
         </div>
-        <div className="flex flex-col w-[45%]  px-10 py-5 gap-4">
+        <div className="flex flex-col w-[45%] min-w-90  px-10 py-5 gap-4">
             <div className="flex flex-col gap-3">
                 <label htmlFor="" className="font-semibold text-xl">Apellidos</label>
                 <input type="text" placeholder="Genez Suarez" className="p-3  bg-gray-100 rounded-md outline-0" disabled/>
