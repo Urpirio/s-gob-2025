@@ -9,7 +9,7 @@ const albert_Sans = Albert_Sans({
 
 export default function SectionFormulario() {
   return (
-    <section className={`flex justify-around p-10 ${albert_Sans.className}`}>
+    <section className={`flex justify-around md:p-10 py-10 md:py-10 flex-wrap ${albert_Sans.className}`}>
             <FormPart2/>
             <FormPart1/>
             <FormPart3/>
