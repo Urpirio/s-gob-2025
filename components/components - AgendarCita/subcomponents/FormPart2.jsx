@@ -6,7 +6,7 @@ export default function FormPart2() {
   return (
     <div className="flex flex-col gap-5 w-[25%]  min-w-80">
         <div>
-            <Link herf={'/Servicios'} className="flex items-center gap-2 text-2xl ">
+            <Link href={'/Servicios'} className="flex items-center gap-2 text-2xl ">
                 <FaArrowLeft className="text-[#0088FF]"/>
                 <span className="text-gray-400">Volver</span>
             </Link>
