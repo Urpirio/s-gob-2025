@@ -4,7 +4,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 export default function FormPart1() {
   return (
-    <div className="flex flex-col gap-5 w-[25%]">
+    <div className="flex flex-col gap-5 w-[25%]  min-w-80">
         <div className="flex flex-col gap-3">
             <label htmlFor="" className="text-xl font-semibold">Institucion</label>
             <input type="text" placeholder="Por defecto"  className="border border-gray-300 p-2 rounded-md bg-[#F3F3F3]"/>
