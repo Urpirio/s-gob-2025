@@ -10,15 +10,18 @@ export default function SectionInputSearch() {
             <span className=" p-1 rounded-[100%] h-10 w-10 flex justify-center items-center bg-[#0088FF]">
                 <RiSearchLine className="text-white text-2xl"/>
             </span>
+
             <input type="text"  className="outline-0 h-[100%]" placeholder="Buscador"/>
             <button className=" py-2 px-5 rounded-3xl flex items-center gap-1 bg-white">
                 <i className="text-gray-500">¿Donde estas?</i> 
                 <FaLocationDot className="text-[#0088FF]"/>
             </button>
         </div>
+
         <div>
             <button className="border py-3 px-10 rounded-4xl text-white bg-[#0088FF]">Agendar nueva cita</button>
         </div>
+        
     </section>
   )
 }

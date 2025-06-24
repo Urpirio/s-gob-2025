@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const TicketComponent = () => {
-  const [showTicket, setShowTicket] = useState(false);
+  const [showTicket, setShowTicket] = useState(true);
 
   const toggleTicket = () => {
     setShowTicket(!showTicket);
@@ -10,12 +10,12 @@ const TicketComponent = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Ticket de la cita</h1>
-      <button
+      {/* <button
         onClick={toggleTicket}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Ver Ticket
-      </button>
+      </button> */}
 
       {showTicket && (
         <div id="ticket" className="mt-4 p-4 border border-gray-300 rounded-lg bg-gray-50">

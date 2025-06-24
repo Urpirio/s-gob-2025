@@ -3,7 +3,7 @@ import { FaCheck, FaXmark } from "react-icons/fa6";
 
 
 
-
+//  un boolean todo
 export const getStatusColor = (status) => {
   switch (status) {
     case 'Activa':
