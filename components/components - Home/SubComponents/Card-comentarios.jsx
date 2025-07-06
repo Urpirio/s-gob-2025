@@ -19,7 +19,7 @@ export default function CardComentarios() {
         };
 
         return(
-    <article key={Data.key} className="flex flex-col gap-10 border border-gray-300 w-90 p-5 rounded-2xl">
+    <article key={Data.key} id={Data.id} className="flex flex-col gap-10 border border-gray-300 w-90 p-5 rounded-2xl min-w-70">
         <header className="flex items-center gap-5">
             <div className="
             [&div>img]:h-20
@@ -40,7 +40,7 @@ export default function CardComentarios() {
                 {Data.Comment}
             </p>
         </main>
-        <footer className="flex items-center justify-end text-2xl gap-1 text-[#007AFF]">
+        <footer className="flex items-center justify-end text-2xl gap-1 text-primary">
             {Star.map(D =>{
                 return(D)
             })}

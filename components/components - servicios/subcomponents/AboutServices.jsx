@@ -6,18 +6,26 @@ import { FaRegClock } from "react-icons/fa6";
 import { TbWorldWww } from "react-icons/tb";
 import { FaArrowDown } from "react-icons/fa6";
 import Link from 'next/link';
+import { IoIosArrowBack } from "react-icons/io";
+import { SetStateAbout } from '../components/section - servicios';
 
 
 export default function AboutServices({Data}) {
 
   return (
-    <article className='flex flex-col justify-between h-[100%] py-5'>
-        <header className='flex flex-col gap-5'>
-            <div className='flex justify-center'>
-                <Image src={ImgPrueba} alt='Prueba' className='object-contain h-[70%] w-[70%]'/>
+    <article className='flex flex-col justify-between h-full py-5 w-full '>
+        <header className='flex flex-col gap-5 lg:gap-5'>
+            <div className='px-4 lg:px-0'>
+                <button className='flex items-center text-primary text-xl font-semibold gap-2' onClick={()=>{SetStateAbout(false)}}>
+                    <IoIosArrowBack/>
+                    <span>Volver</span>
+                </button>
             </div>
-            <div className='flex flex-col px-5 py-2 gap-2'>
-                <div className='flex justify-between'>
+            <div>
+                <Image src={ImgPrueba} alt='Prueba' className='object-contain h-[80%] w-[50%] lg:w-[70%] lg:h-[70%]'/>
+            </div>
+            <div className='flex flex-col  py-2 gap-5 lg:gap-2'>
+                <div className='flex justify-center lg:justify-between'>
                     <span className='flex items-center w-[45%] gap-3'>
                         <FaLocationDot className='text-[#007AFF]'/>
                         <span>Punto GOB Sambil - SD</span>
@@ -27,7 +35,7 @@ export default function AboutServices({Data}) {
                         <span>Lunes a Viernes - 8am - 7pm </span>
                     </span>
                 </div>
-                <div className='flex justify-between'>
+                <div className='flex justify-center lg:justify-between'>
                     <span className='flex items-center w-[45%] gap-3'>
                         <TbWorldWww  className='text-[#007AFF]'/>
                         <Link href={''} className='text-[#007AFF]'>{Data.Data.Link}</Link>
@@ -47,7 +55,7 @@ export default function AboutServices({Data}) {
                 <div>
                     <h1 className='text-xl font-semibold'>Servicios mas utilizados:</h1>
                 </div>
-                <ul className='px-8'>
+                <ul className=' text-gray-700'>
                     {Data.Data.ListaServicios.map( L => {
                         return(
                             <li key={L.Servicio}>{L.Servicio}</li>
@@ -56,9 +64,9 @@ export default function AboutServices({Data}) {
                 </ul>
             </div>
         </main>
-        <footer className='flex justify-center py-2'>
+        <footer className='flex justify-center px-5 lg:px-0 py-2'>
             <Link  href={{pathname:'/AgendarCita',query: {Nombre: 'EOOO'}}} 
-                className='w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF]'>
+                className='w-full lg:w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF]'>
                 <span>Agendar cita</span>
             </Link>
         </footer>

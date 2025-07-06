@@ -9,12 +9,12 @@ export default function CardRegistro1() {
     flex 
     flex-col  
     border-gray-300 
-    w-100 
+    w-80 
     rounded-xl 
     p-5
     shadow-md
     ">
-        <div className="flex items-center text-4xl text-[#0088FF] font-semibold">
+        <div className="flex items-center text-4xl text-secondary font-semibold">
             {Data.Icon}
             <span>{Data.Titulo}</span>
         </div>

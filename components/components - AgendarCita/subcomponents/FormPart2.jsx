@@ -1,14 +1,15 @@
 import { FaArrowLeft } from "react-icons/fa6";
+import Link from "next/link";
 
 
 export default function FormPart2() {
   return (
-    <div className="flex flex-col gap-5 w-[25%]">
+    <div className="flex flex-col gap-5 w-[25%]  min-w-80">
         <div>
-            <button className="flex items-center gap-2 text-2xl ">
+            <Link href={'/Servicios'} className="flex items-center gap-2 text-2xl ">
                 <FaArrowLeft className="text-[#0088FF]"/>
                 <span className="text-gray-400">Volver</span>
-            </button>
+            </Link>
         </div>
         <div>
             <h1 className="text-4xl text-[#0088FF]">Agenda tu cita</h1>

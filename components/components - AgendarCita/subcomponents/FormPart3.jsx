@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FormPart3() {
   return (
-    <div className=' flex flex-col items-center justify-between border  border-gray-400 w-[30%] py-10 px-5 rounded-2xl'>
+    <div className='hidden md:flex flex-col items-center justify-between border   border-gray-400 w-[30%] min-w-90 py-10 px-5 rounded-2xl'>
       <div className='flex gap-3  items-center w-[100%]'>
         <h1 className='text-4xl text-[#0088FF] font-semibold'>Datos de tu cita</h1>
       </div>

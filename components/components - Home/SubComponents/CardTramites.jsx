@@ -7,15 +7,15 @@ export default function CardTramites() {
 
     const Grupo1 =  DataCardTramites.map(Data =>{
         return (
-             <article key={Data.Key} className=" w-70 flex flex-col  ">
+             <article key={Data.Key} className=" w-70 flex flex-col gap-3 ">
                 <header>
-                    <div className={` p-5 ${Data.Stylenumero} text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
+                    <div className={` p-5 ${Data.Stylenumero} flex-shrink-0 text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
                         <span className="text-5xl font-black ">{Data.numero}</span>
                     </div>
                 </header>
                 <main className="flex flex-col gap-2">
                      <h1 className="text-3xl font-semibold">{Data.titulo}</h1>
-                    <p className="text-[18px] text-[#686868]">{Data.descripcion}</p>
+                    <p className="text-[18px] text-gray-500">{Data.descripcion}</p>
                 </main>
             </article>
         )
@@ -23,15 +23,15 @@ export default function CardTramites() {
 
     const Grupo2 =  DataCardTramites2.map(Data =>{
         return (
-             <article key={Data.Key} className=" w-70 flex flex-col  justify-between">
+             <article key={Data.Key} className=" w-70 flex flex-col gap-3  justify-between">
                 <header>
-                    <div className={` p-5 ${Data.Stylenumero} text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
+                    <div className={` p-5 ${Data.Stylenumero} flex-shrink-0 text-white rounded-[100%] w-20 h-20 flex justify-center items-center`}>
                         <span className="text-5xl font-black ">{Data.numero}</span>
                     </div>
                 </header>
                 <main className="flex flex-col gap-2">
                      <h1 className="text-3xl font-semibold">{Data.titulo}</h1>
-                    <p className="text-[18px] text-[#686868]">{Data.descripcion}</p>
+                    <p className="text-[18px] text-gray-500">{Data.descripcion}</p>
                 </main>
             </article>
         )

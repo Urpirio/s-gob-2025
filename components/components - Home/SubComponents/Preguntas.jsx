@@ -14,7 +14,7 @@ export default function Preguntas() {
     <ListItemButton onClick={()=>{setOpen(!Open)}} style={{borderRadius:5,background:'#F4F4F4'}}>
       <div className="flex items-center w-[100%]">
          <ListItemText primary={Data.Pregunta}/>
-          <IoIosArrowForward className={`text-[#007AFF] text-2xl 
+          <IoIosArrowForward className={`text-primary text-2xl 
             ${Open ? 'rotate-90' :'rotate-0'} transition-all duration-300`}/>
       </div>
     </ListItemButton>

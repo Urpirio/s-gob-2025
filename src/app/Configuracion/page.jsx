@@ -1,7 +1,7 @@
 import Sectionforms from "../../../components/components - Configuracion/components/section - forms";
 import SectionModo from "../../../components/components - Configuracion/components/section - Modo";
 import SectionTitlesConfiguracion from "../../../components/components - Configuracion/components/section - TitlesConfiguracion";
-import Header from "../../../components/components - globals/Header";
+import Header from "../../../components/components - globals/components/Header";
 
 export default function page() {
   return (

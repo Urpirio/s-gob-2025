@@ -3,11 +3,11 @@ import ImgPreguntas from '@/../public/img - Home/Questions-cuate (1).png'
 
 export default function EscribirPreguntas() {
   return (
-    <div>
+    <div className="min-w-90">
         <div className="flex flex-col items-center justify-center gap-2 pb-2">
             <Image src={ImgPreguntas} alt=""/>
             <h1 className="text-3xl">¿Alguna pregunta?</h1>
-            <span className="font-extralight text-xl">Puedes preguntar lo que quieras, estamos para aclarar tus dudas. </span>
+            <span className="font-extralight text-xl text-center">Puedes preguntar lo que quieras, estamos para aclarar tus dudas. </span>
         </div>
         <div className="
         flex 
@@ -30,7 +30,7 @@ export default function EscribirPreguntas() {
 
         ">
             <input type="text" placeholder="Escribe tu pregunta y presiona enter" />
-            <button className="bg-[#0088FF] text-white font-semibold">Enviar</button>
+            <button className="bg-primary text-white font-semibold">Enviar</button>
         </div>
     </div>
   )
