@@ -12,7 +12,7 @@ export default function SectionComentarios() {
             breakpoint: '667px',
             numVisible: 1,
         },
-     ]
+     ];
 
     return(
         <section className="py-10 flex flex-col gap-10">
@@ -32,4 +32,4 @@ export default function SectionComentarios() {
             </div>
         </section>
     )
-}
+};
