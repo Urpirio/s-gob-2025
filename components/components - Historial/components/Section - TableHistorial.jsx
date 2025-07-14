@@ -1,14 +1,18 @@
-import LineTableHistorial from "../Subcomponents/LineTableHistorial";
-import TableHeader from "../Subcomponents/filtrado";
-
+import { useState } from "react"
+import LineTableHistorial from "../Subcomponents/LineTableHistorial"
+import TableHeader from "../Subcomponents/filtrado"
 
 export default function SectionTableHistorial() {
+  const [filtro, setFiltro] = useState("")
+
   return (
-    <section className="bg-white  flex flex-col items-center justify-center rounded my-6 w-[90%]">
-      <TableHeader/>
-      <table className="min-w-max w-[90%] table-auto mx-auto">
-        <tbody className="text-gray-600  text-sm font-light">
-          <LineTableHistorial/>
+    <section className="bg-white w-full max-w-6xl mx-auto rounded-lg  my-6">
+
+      <TableHeader filtro={filtro} setFiltro={setFiltro} />
+
+      <table className="w-full table-auto">
+        <tbody className="text-gray-700 text-sm font-light">
+          <LineTableHistorial filtro={filtro} />
         </tbody>
       </table>
     </section>

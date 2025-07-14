@@ -1,54 +1,46 @@
+import React from 'react'
+import { IoSyncSharp } from 'react-icons/io5'
+import { MdOutlineCheckBoxOutlineBlank } from 'react-icons/md'
 
-import React from 'react';
-import { IoSyncSharp } from "react-icons/io5";
-import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
-
-
-const TableHeader = () => {
+const TableHeader = ({ filtro, setFiltro }) => {
   return (
+    <div className="overflow-x-auto w-full">
+      <table className="min-w-full w-full text-sm text-left">
+        <thead className=" text-gray-700 uppercase tracking-wider">
+          <tr className="flex items-center px-4 py-3 border-b border-gray-300">
 
-    <div className="flex flex-col w-full">
-      <div className="overflow-x-auto max-w-full">
-        <div className="inline-block w-full py-2 sm:px-6 lg:px-8">
-          <div className="overflow-hidden">
+            {/* Selección + Filtro XD */}
+            <th className="flex items-center gap-3 w-[200px]">
+              <MdOutlineCheckBoxOutlineBlank className="text-blue-600 text-xl" />
 
-            <table className="min-w-full w-full text-left text-sm font-light">
-              <thead className="border-b font-medium dark:border-neutral-500">
-                <tr className='flex  items-center'>
-                  
-                    <MdOutlineCheckBoxOutlineBlank  className= 'text-2xl flex justify-between text-blue-600'/>
+              <select
+                value={filtro}
+                onChange={(e) => setFiltro(e.target.value)}
+                className="text-sm text-blue-700 bg-white border border-gray-300 rounded px-2 py-1 focus:outline-none"
+              >
+                <option value="">Todas</option>
+                <option value="activo">Activos</option>
+                <option value="fallido">Fallidos</option>
+                <option value="procesado">Procesados</option>
+              </select>
+            </th>
 
-                    <select className='text-blue-700 flex justify-center ' name="" id="">
-                      <option className='' value=""></option>
-                      <option value="">ninguno</option>
-                      <option value="">activos</option>
-                      <option value="">Fallidos</option>
-                      <option value="">Procesados</option>
-                    <option value="">todas</option>
-                  </select> 
+            {/* Servicios mi pana */}
+            <th className="flex items-center gap-2 w-2/5 min-w-[180px] font-medium">
+              <IoSyncSharp className="text-blue-700 text-xl" />
+              Servicios
+            </th>
 
-                  <th scope="col" className="px-3 py-4 gap-0 flex items-center w-2/5 min-w-[180px]">
- 
-                 
+            <th className="w-1/5 min-w-[120px] font-medium px-4">Fecha</th>
 
-                         <IoSyncSharp className='mr-2 text-2xl text-blue-700 ' />
-                          Servicios 
-            
-                  </th>
-                  <th scope="col" className="px-6 py-4 w-1/5 min-w-[120px]">Fecha</th>
-                  <th scope="col" className="px-6 py-4 w-1/5 min-w-[120px]">Estado</th>
-                  <th scope="col" className="px-6 py-4 w-1/5 min-w-[120px]">Tickets</th>
-                </tr>
-              </thead>
-            </table>
+            <th className="w-1/5 min-w-[120px] font-medium px-4">Estado</th>
 
-          </div>
-        </div>
-      </div>
+            <th className="w-1/5 min-w-[120px] font-medium px-4">Tickets</th>
+          </tr>
+        </thead>
+      </table>
     </div>
-  );
-};
+  )
+}
 
-
-
-export default TableHeader;
+export default TableHeader

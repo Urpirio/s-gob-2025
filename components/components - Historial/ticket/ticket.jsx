@@ -1,32 +1,63 @@
-import React, { useState } from 'react';
+import React from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
-const TicketComponent = () => {
-  const [showTicket, setShowTicket] = useState(true);
-
-  const toggleTicket = () => {
-    setShowTicket(!showTicket);
-  };
+const TicketComponent = ({ onClose }) => {
+  const handleModalClick = (e) => e.stopPropagation();
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Ticket de la cita</h1>
-      {/* <button
-        onClick={toggleTicket}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    <div
+      className="fixed inset-0   bg-opacity-40 flex items-center justify-center z-50"
+      onClick={onClose}
+    >
+      {/* Contenedor del ticket */}
+      <div
+        onClick={handleModalClick}
+        className="bg-white rounded-xl shadow-lg w-[300px] h-[400px] max-w-sm p-6 relative text-center animate-fade-in-down"
       >
-        Ver Ticket
-      </button> */}
+        
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-gray-400 hover:text-red-500 text-2xl font-bold"
+        >
+          &times;
+        </button>
 
-      {showTicket && (
-        <div id="ticket" className="mt-4 p-4 border border-gray-300 rounded-lg bg-gray-50">
-          <h2 className="text-xl font-semibold mb-2">Detalles del Ticket</h2>
-          <p><strong>Fecha:</strong> 09092024</p>
-          <p><strong>Hora:</strong> 00:00</p>
-          <p><strong>Nombre:</strong> John Doe</p>
-          <p><strong>Trámite:</strong> Cambio de cédula</p>
-          <img src="https://via.placeholder.com/150" alt="Código QR" className="mt-2" />
+        
+        <h2 className="text-2xl font-bold mb-2">Ticket de la cita</h2>
+
+        
+        <div className="flex items-center justify-center text-sm text-gray-500 mb-4">
+          <FaMapMarkerAlt className="mr-1 text-blue-500" />
+          Santo Domingo Este, Megacentro, Punto GOB.
         </div>
-      )}
+
+
+
+        <div className="grid grid-cols-2 gap-3 text-sm text-left mb-4">
+          <div>
+            <p className="text-gray-600 font-medium">Fecha</p>
+            <p className="text-black">00/00/0000</p>
+          </div>
+          <div>
+            <p className="text-gray-600 font-medium">Hora</p>
+            <p className="text-black">00:00</p>
+          </div>
+          <div>
+            <p className="text-gray-600 font-medium">Trámite</p>
+            <p className="text-black">Cambio de cédula</p>
+          </div>
+          <div>
+            <p className="text-gray-600 font-medium">Nombre</p>
+            <p className="text-black">John Doe Genez</p>
+          </div>
+        </div>
+
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?data=ejemplo-ticket&size=150x150"
+          alt="Código QR"
+          className="mx-auto mt-2"
+        />
+      </div>
     </div>
   );
 };
