@@ -10,21 +10,17 @@ export default function SectionServicios() {
   const {ChangeAboutS,DataAboutServicies,StateAbout,setStateAbout} = Func_AboutServices();
   SetStateAbout = setStateAbout;
 
-  // Hook para detectar el tamaño de pantalla de forma segura
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 667);
     };
-
-    // Verificar tamaño inicial
+    //Arraglar
     checkScreenSize();
 
-    // Escuchar cambios de tamaño
     window.addEventListener('resize', checkScreenSize);
 
-    // Limpiar listener
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
