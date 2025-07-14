@@ -65,7 +65,7 @@ export default function AboutServices({Data}) {
             </div>
         </main>
         <footer className='flex justify-center px-5 lg:px-0 py-2'>
-            <Link  href={{pathname:'/AgendarCita',query: {Nombre: 'EOOO'}}} 
+            <Link  href={{pathname:`/${Data.id}`}} 
                 className='w-full lg:w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF]'>
                 <span>Agendar cita</span>
             </Link>
