@@ -32,14 +32,14 @@ export default function LineTableHistorial() {
         </div>
       </div>
 
-      {DataHistorial.map((data) => {
+      {DataHistorial.map((data, index) => {
         const { color, icon } = getStatusColor(data.status)
         const isSelected = selectedIds.includes(data.id)
 
         return (
           <div
             key={data.id}
-            className="w-full bg-white rounded-xl shadow-sm border border-gray-200 mb-3 transition hover:shadow-md"
+               className={`${index % 2 === 0 ? "bg-white" : "bg-gray-100"} w-full rounded-xl shadow-sm border border-gray-200 mb-3 transition hover:shadow-md`}
           >
             <div className="flex flex-wrap items-center justify-between px-4 py-4 sm:px-6">
               <div className="flex items-start gap-30 w-full sm:w-2/5">
@@ -65,8 +65,8 @@ export default function LineTableHistorial() {
               </div>
 
               <div className="flex pl-[30px]  flex-col sm:flex-col gap-5 sm:gap-4 w-full sm:w-1/5 mt-3 sm:mt-0">
-                <div className="flex  items-center text-sm text-gray-700">
-                  <MdDateRange className="text-blue-600 mr-1" />
+                <div className="flex font-semibold  items-center text-sm text-gray-700">
+                  <MdDateRange className="text-blue-600 mr-1 " />
                   {data.date}
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
@@ -75,7 +75,7 @@ export default function LineTableHistorial() {
                 </div>
               </div>
 
-              {/* ESTADO */}
+              {/*estado */}
               <div className="w-full pl-[30px] sm:w-1/5 mt-3 sm:mt-0">
                 <div
                   className={`w-fit text-xs px-3 py-[6px] rounded-full font-medium flex items-center gap-2 ${color}`}
@@ -89,7 +89,7 @@ export default function LineTableHistorial() {
               {/* boton TICKET sin esta condicion ternaria no se renderiza */}
               <div className="w-full sm:w-1/5 mt-3 sm:mt-0 text-right">
                 <button
-                  className="flex items-center gap-2 justify-center w-full sm:w-auto bg-gray-100 hover:bg-gray-200 text-sm font-semibold py-2 px-4 rounded-xl text-gray-900 transition"
+                  className="flex items-center gap-2 justify-center w-full sm:w-auto bg-gray-300 hover:bg-gray-200 text-sm font-semibold py-2 px-4 rounded-xl text-gray-900 transition"
                   onClick={() =>
                     setOpenTicketId(openTicketId === data.id ? null : data.id)
                   }
