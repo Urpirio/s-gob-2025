@@ -5,6 +5,7 @@ import { DataHistorial } from '../../Data/Historial/DataHistorial';
 import { useState } from 'react';
 import { useComponentsTable } from '../../SubComponents/useComponentTable';
 import Pop_Up_Ticket from '../../SubComponents/Pop-Up-Ticket';
+import PaginacionTabla from '../../SubComponents/Paginador - Tabla';
 
 export default function SectionTableHistorial() {
 
@@ -13,7 +14,7 @@ export default function SectionTableHistorial() {
 
 
   return (
-    <section className='pb-5 '>
+    <section className='pb-5 flex flex-col gap-3'>
         <DataTable
         value={DataHistorial}
         selectionMode={TicketSeleccionado ? null : 'single'}
@@ -47,6 +48,7 @@ export default function SectionTableHistorial() {
           body={(D)=><Tickets Data={D}/>}/>
 
         </DataTable>
+        <PaginacionTabla/>
     </section>
   )
 }
