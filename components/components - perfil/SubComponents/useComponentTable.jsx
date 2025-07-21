@@ -65,7 +65,7 @@ export const useComponentsTable = () =>{
         return <div>
             <button 
             onClick={()=>DeployPop_Up_Ticket(true)}
-            className="flex items-center border border-gray-100 gap-2 text-primary px-3 py-1 rounded-md bg-gray-50 cursor-pointer hover:opacity-80 transition-all duration-300">
+            className="flex items-center justify-center border min-w-35 border-gray-100 gap-2 text-primary px-3 py-1 rounded-md bg-gray-50 cursor-pointer hover:opacity-80 transition-all duration-300">
             <LuTickets/>
             <span>Ver ticket </span>
         </button>
