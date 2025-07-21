@@ -1,12 +1,13 @@
 'use client';
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import { TbWorld } from "react-icons/tb";
-import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { DeployMenuMovil } from "../func/DeployMenuMovil";
 import { useEffect } from "react";
+import { BsChatDots } from "react-icons/bs";
+import { DeployChatBotContainer } from "./ChatBotContainer";
+
 
 export let SetMenu;
 export default function Header() {
@@ -35,9 +36,10 @@ export default function Header() {
       <div className="hidden flex-grow justify-end gap-3  w-[30%] lg:flex">
         <Link href={'/Login'} className="bg-primary py-2 px-5 rounded-2xl text-white">Iniciar sesion</Link>
         <Link href={'/Registro'} className="bg-gray-100 py-2 px-5 rounded-2xl text-gray-700">Registrarse</Link>
-        <button className="flex gap-1 items-center text-2xl">
-          <TbWorld/>
-          <IoIosArrowDown/>
+        <button 
+        onClick={()=>DeployChatBotContainer(true)}
+        className="flex gap-1 text-2xl border rounded-full h-10 w-10 justify-center items-center bg-primary text-white shadow-2xl cursor-pointer hover:opacity-75 transition-all duration-200 hover:scale-110">
+         <BsChatDots/>
         </button>
       </div>
       <div className="flex justify-end items-center w-[30%] lg:hidden">
