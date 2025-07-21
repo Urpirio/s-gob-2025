@@ -43,7 +43,7 @@ export default function ChatBotContainer() {
       closeIcon={true}
       blockScroll
       maskClassName="backdrop-blur-md"
-      className="border border-blue-100  w-[50%] h-[80%] rounded-2xl shadow-xl shadow-blue-500/10"
+      className="border border-blue-100  w-[50%] min-w-80 h-[80%] rounded-2xl shadow-xl shadow-blue-500/10"
     >
       <section className="flex h-full flex-col backdrop-blur-3xl bg-white/80 rounded-2xl">
         <div className="py-1 flex items-center justify-between px-2">
@@ -89,7 +89,7 @@ export default function ChatBotContainer() {
             className="border border-blue-500/20 backdrop-blur-2xl shadow-xl bg-white shadow-gray-300 h-10 w-[90%] rounded-md outline-none p-1 text-gray-700"
           />
           <Button
-            className="border-0 h-10 px-5 rounded-md cursor-pointer shadow-2xl bg-primary text-white hover:opacity-75 transition-all duration-200"
+            className="border-0 h-10 px-5 justify-center shrink rounded-md cursor-pointer shadow-2xl bg-primary text-white hover:opacity-75 transition-all duration-200"
             onClick={() => EnviarPregunta({ Pregunta: InputChat })}
           >
             Preguntar

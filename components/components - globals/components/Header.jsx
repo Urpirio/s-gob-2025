@@ -55,6 +55,11 @@ export default function Header() {
           <Link className={`${pathname === '/Ayuda' ? 'text-primary' : 'text-gray-700'}`} href={'/Ayuda'}>Ayuda</Link>
         </div>
         <div className="flex flex-col gap-3">
+          <button 
+        onClick={()=>DeployChatBotContainer(true)}
+        className="flex gap-1 text-2xl border rounded-full h-10 w-full justify-center items-center bg-primary text-white shadow-2xl cursor-pointer hover:opacity-75 transition-all duration-200 hover:scale-110">
+         <BsChatDots/>
+        </button>
         <Link href={'/Login'} className="bg-primary py-2 px-5 rounded-2xl text-center text-white">Iniciar sesion</Link>
         <Link href={'/Registro'} className="bg-gray-100 py-2 px-5 rounded-2xl text-center text-gray-700">Registrarse</Link>
         </div>
