@@ -24,19 +24,30 @@ export default function useChatBot() {
 
   const EnviarPregunta = async ({ Pregunta }) => {
     setInputChat("");
-    const response = await GenAi.models.generateContent({
+    const respuesta = await GenAi.models.generateContent({
       model: "gemini-2.5-flash",
-      contents: InputChat,
+      contents: `
+      Eres un agente del gobierno de la republica dominicana, solo puede responder preguntas el pais en cuestion.No debes responder a este texto, solo tienes que responder las preguntas
+      
+      Esta es la Pregunta ${InputChat}
+      
+      `,
     });
+
     setPreguntas_Respuestas([
       ...Pregunta_Respuestas,
       {
         pregunta: <PreguntaUsuario pregunta={Pregunta} />,
         respuesta: (
-          <RespuestaAi Respuesta={response.text} />
+          <RespuestaAi Respuesta={respuesta.text} />
         ),
       },
     ]);
+  
+
+  
+
+
   };
 
   return {
