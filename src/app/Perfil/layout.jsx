@@ -1,3 +1,4 @@
+import ChatBotContainer from "../../../components/components - globals/components/ChatBotContainer";
 import Footer from "../../../components/components - globals/components/Footer";
 import Header from "../../../components/components - globals/components/Header";
 import SectionNavegacion from "../../../components/components - perfil/Components/Perfil/Section- Navegacion";
@@ -11,6 +12,7 @@ export default function layout({children}) {
             {children}
         </main>
         <Footer/>
+        <ChatBotContainer/>
     </body>
   )
 }

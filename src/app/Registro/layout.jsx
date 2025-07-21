@@ -5,6 +5,7 @@ import { Albert_Sans } from 'next/font/google';
 import Header from '../../../components/components - globals/components/Header';
 import Footer from '../../../components/components - globals/components/Footer';
 import { SetMenu } from "../../../components/components - globals/components/Header";
+import ChatBotContainer from "../../../components/components - globals/components/ChatBotContainer";
 
 const albertsans = Albert_Sans({
   subsets: ['latin-ext']
@@ -22,6 +23,7 @@ export default function layout({children}) {
             </section>
             </main>
             <Footer/>
+            <ChatBotContainer/>
         </body>
   )
 }

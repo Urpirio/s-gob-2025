@@ -4,6 +4,7 @@ import SectionLogin from "../../../components/components - Login/components/Sect
 import ImgRegistro from '@/../public/img - Login/Sign up-rafiki 1.png';
 import Image from "next/image";
 import Footer from "../../../components/components - globals/components/Footer";
+import ChatBotContainer from "../../../components/components - globals/components/ChatBotContainer";
 // import { SetMenu } from "../../../components/components - globals/components/Header";
 
 export default function Login() {
@@ -18,6 +19,7 @@ export default function Login() {
         </section>
       </main>
       <Footer/>
+      <ChatBotContainer/>
     </body>
   )
 }
