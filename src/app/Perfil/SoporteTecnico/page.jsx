@@ -3,7 +3,7 @@ import SectionAsistencia from "../../../../components/components - perfil/Compon
 
 export default function page() {
   return (
-        <main className="flex  justify-between gap-38 py-5 ">
+        <main className="flex   gap-38 py-5 flex-wrap justify-center">
           <SectionAsistencia/>
           <SectionFormulario/>
         </main>
