@@ -54,7 +54,7 @@ export default function ChatBotContainer() {
                <IoCloseSharp/>
             </button>
         </div>
-        <div className="h-[90%] rounded-t-2xl flex flex-col overflow-y-scroll py-2 px-2" style={{scrollbarWidth:'none'}}>
+        <div className="h-[90%] rounded-t-2xl flex flex-col overflow-y-scroll py-2 px-2 gap-3" style={{scrollbarWidth:'none'}}>
             {Pregunta_Respuestas?.map(D=>{
                 return(
                     <div className="flex flex-col w-full gap-3">
