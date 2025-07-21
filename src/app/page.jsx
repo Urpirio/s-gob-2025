@@ -9,17 +9,13 @@ import SectionServicios from "../../components/components - Home/components/Sect
 import SectionTramites from "../../components/components - Home/components/Section - Tramites";
 import SectionComentarios from "../../components/components - Home/components/Section-comentarios";
 import { SetMenu } from "../../components/components - globals/components/Header";
-
+import ChatBotContainer from "../../components/components - globals/components/ChatBotContainer";
 
 export default function Home() {
 
-  // const Close_Movil_Menu = () => {
-  //  SetMenu(false);
-  // }
-
 
   return (
-    <body onTouchMove={()=>{SetMenu()}}>
+    <body  onTouchMove={()=>{SetMenu()}}>
         <Header/>
         <main>
             <SectionSearch/>
@@ -31,6 +27,7 @@ export default function Home() {
             <SectionComentarios/>
         </main>
         <Footer/>
+        <ChatBotContainer/>
     </body>
   )
 }
