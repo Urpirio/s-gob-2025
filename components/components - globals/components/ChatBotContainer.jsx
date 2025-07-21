@@ -43,7 +43,7 @@ export default function ChatBotContainer() {
       closeIcon={true}
       blockScroll
       maskClassName="backdrop-blur-md"
-      className="border border-blue-100  w-[50%] min-w-80 h-[80%] rounded-2xl shadow-xl shadow-blue-500/10"
+      className="border border-blue-100  md:w-[50%] w-[96%] h-full md:h-[80%] rounded-2xl shadow-xl shadow-blue-500/10"
     >
       <section className="flex h-full flex-col backdrop-blur-3xl bg-white/80 rounded-2xl">
         <div className="py-1 flex items-center justify-between px-2">
