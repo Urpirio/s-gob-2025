@@ -4,6 +4,7 @@ import Header from "../../../components/components - globals/components/Header";
 import SectionBuscador from "../../../components/components - servicios/components/section - buscador";
 import SectionServicios from "../../../components/components - servicios/components/section - servicios";
 import { SetMenu } from "../../../components/components - globals/components/Header";
+import ChatBotContainer from "../../../components/components - globals/components/ChatBotContainer";
 
 export default function Servicios() {
   return (
