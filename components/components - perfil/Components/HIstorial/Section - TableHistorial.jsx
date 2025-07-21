@@ -13,7 +13,7 @@ export default function SectionTableHistorial() {
 
 
   return (
-    <section className='pb-5'>
+    <section className='pb-5 '>
         <DataTable
         value={DataHistorial}
         selectionMode={TicketSeleccionado ? null : 'single'}
