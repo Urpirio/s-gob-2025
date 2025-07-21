@@ -62,16 +62,16 @@ export default function ChatBotContainer() {
                             <span className="border border-primary/50 shadow-2xl p-2 rounded-l-xl rounded-r-md bg-primary text-white">{D.pregunta}</span>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <span className="text-gray-800 text-shadow-2xs">{D.respuesta}</span>
+                            <span className="text-gray-800 text-shadow-2xs">{D?.respuesta}</span>
                             <div className="flex gap-2">
                                 <button 
                                 className="border border-gray-100 p-1 rounded-md cursor-pointer hover:scale-110 transition-all duration-200"
-                                onClick={()=>CopiarTexto({respuesta:D.respuesta})}>
+                                onClick={()=>CopiarTexto({respuesta:D?.respuesta})}>
                                     <IoCopyOutline/>
                                 </button>
                                 <button
                                 className="border border-gray-100 p-1 rounded-md cursor-pointer hover:scale-110 transition-all duration-200"
-                                onClick={()=>Lectortexto({Texto:D.respuesta})}
+                                onClick={()=>Lectortexto({Texto:D?.respuesta})}
                                 >
                                     <RiSpeakAiLine/>
                                 </button>
