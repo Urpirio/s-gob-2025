@@ -18,7 +18,7 @@ export default function SectionFormulario() {
     });
 
   return (
-    <section className="w-1/2">
+    <section className="w-1/3  min-w-90">
         <div className="flex flex-col gap-3 border border-gray-100 p-5 rounded-2xl shadow-xs shadow-primary/50">
             <div className="flex flex-col">
                 <label>Nombre completo</label>
