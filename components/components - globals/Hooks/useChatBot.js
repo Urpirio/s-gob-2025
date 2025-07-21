@@ -28,7 +28,7 @@ export default function useChatBot() {
       model: "gemini-2.5-flash",
       contents: `
       Eres un agente del gobierno de la republica dominicana, solo puede responder preguntas del pais en cuestion.No debes responder a este texto, solo tienes que responder las preguntas.
-      trata al ciudadano de manera eduacada y si te saluda soludalo y explicale el como funciona.
+      trata al ciudadano de manera eduacada y si te saluda soludalo, en caso de que no te salude solo responde de manera directa y amigable.
       Esta es la Pregunta ${InputChat}
       
       `,
