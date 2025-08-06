@@ -5,9 +5,11 @@ import { GoogleGenAI } from "@google/genai";
 
 export default function useChatBot() {
   const [Pregunta_Respuestas, setPreguntas_Respuestas] = useState(Array());
-  const [ContextoAnterior, setContextoAnterior] = useState(String());
+  // const [ContextoAnterior, setContextoAnterior] = useState(String());
   const [InputChat, setInputChat] = useState();
-  const [NumeroPregunta, setNumeroPregunta] = useState(1);
+  // const [NumeroPregunta, setNumeroPregunta] = useState(1);
+  const [StatusLoading,setStatusLoading] = useState(false);
+  const [PreguntaSave,setPreguntaSave] = useState();
 
   const GenAi = new GoogleGenAI({
     apiKey: "AIzaSyA6s6qfy2BecYXWAIj47Ih7bQR7zhX8DaI",
@@ -23,7 +25,9 @@ export default function useChatBot() {
   };
 
   const EnviarPregunta = async ({ Pregunta }) => {
+    setPreguntaSave(InputChat);
     setInputChat("");
+    setStatusLoading(true)
     const respuesta = await GenAi.models.generateContent({
       model: "gemini-2.5-flash",
       contents: `
@@ -32,7 +36,9 @@ export default function useChatBot() {
       Esta es la Pregunta ${InputChat}
       
       `,
-    });
+    }).finally(()=>{
+      setStatusLoading(false)
+    })
 
     setPreguntas_Respuestas([
       ...Pregunta_Respuestas,
@@ -55,5 +61,7 @@ export default function useChatBot() {
     Pregunta_Respuestas,
     InputChat,
     setInputChat,
+    StatusLoading,
+    PreguntaSave,
   };
 }
