@@ -17,7 +17,7 @@ export default function SectionFormulario() {
     Telefono: String(),
     Nombres: String(),
     Correo:String(),
-    Cedula:String(),
+    Cedula:Number(),
     Direccion:String(),
   });
 
