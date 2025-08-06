@@ -1,39 +1,45 @@
 import Image from "next/image";
-import ImgPrueba from '@/../public/img - Home/Punto-Gob-Sambil.jpg'
+import ImgPrueba from "@/../public/img - Home/Punto-Gob-Sambil.jpg";
 import { Roboto } from "next/font/google";
-import { DataCardPuntoGob } from "../data/DataCardPuntoGob";
 
 const roboto = Roboto({
-    subsets: ['latin-ext']
+  subsets: ["latin-ext"],
 });
 
-export default function CardGob() {
-  const CardG = DataCardPuntoGob.map(Data =>{
-    return (
-    <article key={Data.key} className={`border border-gray-300 w-[35%] max-w-100 min-w-80 p-5 rounded-xl flex flex-col gap-1 ${roboto.className} shadow-2xs`}>
-        <header className="flex flex-col gap-2">
-            <span className="text-[#0088FF] font-semibold">{Data.NombreGob}</span>
-            <Image src={ImgPrueba} className="rounded-md" alt={Data.NombreGob}/>
-            <span className="text-gray-500">{Data.Distancia}</span>
-        </header>
-        <main>
-            <p className="font-semibold">{Data.Descripcion}</p>
-        </main>
-        <footer className="
+export default function CardGob({ NombreGob, Distancia, Descripcion, key }) {
+  return (
+    <article
+      key={key}
+      className={`border border-gray-300 w-90 max-w-100 min-w-80 rounded-xl flex flex-col gap-1 ${roboto.className} shadow-2xs`}
+    >
+      <div className="flex flex-col gap-2 p-1">
+        <Image src={ImgPrueba} className="rounded-xl" alt={NombreGob} />
+      </div>
+      <div className="p-2">
+        <div className="flex flex-col gap-2">
+          <span className="text-[#0088FF] font-semibold">{NombreGob}</span>
+          <span className="text-gray-500">{Distancia}</span>
+          <p className="">{Descripcion}</p>
+        </div>
+
+        <div
+          className="
         flex
         justify-between
-        [&footer>button]:p-2
-        [&footer>button]:w-[45%]
-        [&footer>button]:rounded-md
-        [&footer>button]:
-        ">
-            <button className="bg-gray-100 text-sm xxl:text-base text-primary-light">Detalles</button>
-            <button className="bg-primary-light text-sm xxl:text-base text-white">solicitar servicio</button>
-        </footer>
-        </article>
-
-  )
-  })
-
-  return(CardG)
+        [&_button]:p-2
+        [&_button]:w-[45%]
+        [&_button]:rounded-md
+        pt-2
+        "
+        >
+          <button className="bg-gray-100 text-sm xxl:text-base text-primary-light">
+            Detalles
+          </button>
+          <button className="bg-primary-light text-sm xxl:text-base text-white">
+            solicitar servicio
+          </button>
+        </div>
+      </div>
+    </article>
+  );
 }
