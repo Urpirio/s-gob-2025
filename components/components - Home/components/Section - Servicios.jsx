@@ -40,7 +40,6 @@ export default function SectionServicios() {
             numVisible={3}
             autoplayInterval={5000}
             itemTemplate={(D) => {
-              console.log(D);
               return (
                 <CardServicios
                   key={D?.key}
