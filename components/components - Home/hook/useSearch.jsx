@@ -25,11 +25,11 @@ import { useEffect } from "react";
      const ConseguirUbicacion = () =>{
        if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition((D)=>{
-            console.log(D)
+            // console.log(D)
             //Esto esta en proceso
             //aun no se usar la api de google 
         },(D)=>{
-            console.log(D)
+            // console.log(D)
         });
         
        }
