@@ -1,27 +1,23 @@
 "use client";
 import {
+  AdvancedMarker,
   APIProvider,
   Map,
   Pin,
-  AdvancedMarker,
 } from "@vis.gl/react-google-maps";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useMapGoogle } from "../hook/useMapGoogle";
+import Card_PuntoGob from "../SubComponents/Card-PuntoGob";
 
 export default function Section_MapGoogle() {
-  const [NivelZoom, setNivelZoom] = useState(10);
-  const [StatusDialog, setStatusDialog] = useState(false);
-  const [DataDialog, setDataDialog] = useState({
-    NombrePg: String(),
-    localizacion: {
-      lat: Number(),
-      lng: Number(),
-    },
-  });
-
-  const [UserLocation, setUserLocation] = useState({
-    lat: Number(),
-    lng: Number(),
-  });
+  const {
+    NivelZoom,
+    setNivelZoom,
+    setUserLocation,
+    UserLocation,
+    Marcadores,
+    setStatusDialog,
+  } = useMapGoogle();
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -31,130 +27,52 @@ export default function Section_MapGoogle() {
           lng: D.coords.longitude,
         });
       });
-    }
-  },[]);
-
-  const DatosPuntos = [
-    {
-      NombrePg: "Punto GOB Megacentro",
-      localizacion: {
-        lat: 18.506456694907435,
-        lng: -69.85606654403979,
-      },
-    },
-    {
-      NombrePg: "Punto GOB San Cristóbal",
-      localizacion: {
-        lat: 18.42327811559933,
-        lng: -70.0991001512923,
-      },
-    },
-    {
-      NombrePg: "Punto GOB Occidental Mall",
-      localizacion: {
-        lat: 18.485351665435633,
-        lng: -70.00003049470853,
-      },
-    },
-    {
-      NombrePg: "Punto GOB Sambil",
-      localizacion: {
-        lat: 18.482522,
-        lng: -69.911391,
-      },
-    },
-    {
-      NombrePg: "Punto GOB Santiago",
-      localizacion: {
-        lat: 19.48447232600464,
-        lng: -70.70892480353132,
-      },
-    },
-    {
-      NombrePg: "Punto GOB Expreso",
-      localizacion: {
-        lat: 18.481897965924357,
-        lng: -69.8457521863564,
-      },
-    },
-  ];
-
-  const Marcadores = () => {
-    const Mark = DatosPuntos.map((D) => {
-      return (
-        <AdvancedMarker
-          style={{}}
-          onClick={() => {
-            setStatusDialog(!StatusDialog);
-            setDataDialog(D);
-          }}
-          position={D?.localizacion}
-          title={D?.NombrePg}
-        >
-          <Pin
-            background={"#007AFF"}
-            glyphColor={"#FFFFFF"}
-            borderColor={"#caf0f8"}
-          ></Pin>
-        </AdvancedMarker>
-      );
-    });
-    return Mark;
-  };
-
-  const DialogManual = () => {
-    return (
-      <article className="p-2 absolute">
-        <div
-          className={`${
-            StatusDialog ? "flex" : " hidden"
-          } z-40  bg-white items-center rounded-2xl p-2 shadow-2xl shadow-gray-700/50 border border-gray-300`}
-        >
-          <img
-            className="h-60 w-60 object-cover rounded-2xl"
-            src="https://pgr.gob.do/wp-content/uploads/2022/05/LA2A1422.jpg"
-            alt="Prueba"
-          />
-          <div className="h-60 w-60 text-black flex gap-3 flex-col justify-between pl-2">
-            <div>
-              <h2 className="text-2xl">{DataDialog?.NombrePg}</h2>
-              <p className="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Eveniet, culpa aliquid. Harum dolorem, aliquid ratione neque,
-                dicta corporis a accusamus soluta repudiandae alias reiciendis
-                dolores atque, ad est ducimus. Nobis.
-              </p>
-            </div>
-            <div className="w-full flex justify-end">
-              <button className="border-0 p-2  rounded-lg bg-primary text-white">
-                Agendar cita
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-    );
-  };
+    };
+  }, []);
 
   return (
-    <section className=" flex relative h-100">
-      <APIProvider apiKey="AIzaSyBUsVkX1m_0feaWe6aL-rcmx4mySEyuUus">
-        <Map
-          onDrag={(D) => {
-            setStatusDialog(false);
-          }}
-        //   controlled
-          disableDefaultUI
-          mapId="739af084373f96fe"
-          zoom={NivelZoom}
-          gestureHandling="greedy"
-          defaultCenter={{ lat: 18.481897965924357, lng: -69.8457521863564 }}
-          onZoomChanged={(e) => setNivelZoom(e.detail.zoom)}
-        >
-          <Marcadores />
-        </Map>
-      </APIProvider>
-      <DialogManual />
+    <section
+      className={` flex relative  flex-wrap gap-3 items-center justify-center py-3`}
+    >
+      <div className="md:w-[60%] w-full hidden md:flex  h-120">
+        <APIProvider apiKey="AIzaSyBUsVkX1m_0feaWe6aL-rcmx4mySEyuUus">
+          <Map
+            onDrag={() => {
+              setStatusDialog(false);
+            }}
+            style={{ width: "100%", height: "100%" }}
+            mapId={"HYBRID"}
+            disableDefaultUI
+            zoom={NivelZoom}
+            defaultCenter={{ lat: UserLocation?.lat, lng: UserLocation?.lng }}
+            onZoomChanged={(e) => setNivelZoom(e.detail.zoom)}
+          >
+            <Marcadores />
+            <AdvancedMarker
+              style={{ borderRadius: 20 }}
+              position={{ lat: UserLocation?.lat, lng: UserLocation?.lng }}
+            >
+              <Pin
+                borderColor="#007AFF"
+                background="#007AFF"
+                glyphColor="white"
+              ></Pin>
+            </AdvancedMarker>
+          </Map>
+        </APIProvider>
+      </div>
+
+      <div className="h-full w-[30%] min-w-90 md:min-w-125 md:p-5 px-2  ">
+        <article className="border border-gray-100/40 bg-white/60 shadow-2xl shadow-gray-300/80 h-full w-full rounded-2xl p-2 backdrop-blur-md ">
+          <div className="px-2  flex flex-col gap-2 text-center xl:text-start">
+            <h2 className="text-4xl text-primary">Citas en tiempo real</h2>
+            <span className="text-xl text-gray-500">56,213</span>
+          </div>
+          <div style={{scrollbarWidth:'none'}} className="p-2 flex lg:flex-wrap overflow-x-scroll w-full lg:justify-between justify-start gap-2">
+            <Card_PuntoGob />
+          </div>
+        </article>
+      </div>
     </section>
   );
 }
