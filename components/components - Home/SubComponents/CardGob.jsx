@@ -10,7 +10,7 @@ export default function CardGob({ NombreGob, Distancia, Descripcion, key }) {
   return (
     <article
       key={key}
-      className={`border border-gray-300 w-90 max-w-100 min-w-80 rounded-xl flex flex-col gap-1 ${roboto.className} shadow-2xs`}
+      className={`border border-gray-300 w-1/3 min-w-79 rounded-xl flex flex-col gap-1 ${roboto.className} shadow-2xs`}
     >
       <div className="flex flex-col gap-2 p-1">
         <Image src={ImgPrueba} className="rounded-xl" alt={NombreGob} />
