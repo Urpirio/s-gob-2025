@@ -22,14 +22,22 @@ export default function SectionPuntoGob() {
           Transformando la gestión pública contigo.
         </span>
       </div>
-      <div className="flex w-full justify-center  p-2 gap-5 xxl:gap-0">
+      <div className="flex w-full justify-center sm:p-2 ">
         <Carousel
-          className="w-[80%]"
+          className="sm:w-[80%] w-full"
+          containerClassName="flex gap-5"
           value={DataCardPuntoGob}
           prevIcon={() => {}}
           nextIcon={() => {}}
           numVisible={3}
           autoplayInterval={5000}
+          responsiveOptions={[
+            {
+              breakpoint: "667px",
+              numVisible: 1,
+              numScroll: 1,
+            },
+          ]}
           itemTemplate={(D) => {
             return (
               <CardGob
