@@ -22,16 +22,16 @@ export default function SectionServicios() {
         </h1>
       </div>
       <div
-        className="flex gap-5 px-5 w-full justify-center"
-        style={{ scrollbarWidth: "none", scrollbarColor: "blue" }}
+        className="flex gap-5 sm:px-5 w-full justify-center"
+        // style={{ scrollbarWidth: "none", scrollbarColor: "blue" }}
       >
-        <div className="w-[85%] flex justify-center">
+        <div className="w-[85%] min-w-90 flex md:justify-center">
           <Carousel
-            prevIcon={()=>{
-              return  <IoIosArrowBack className="text-5xl text-blue-500"/>
+            prevIcon={() => {
+              return <IoIosArrowBack className="text-5xl hidden sm:flex text-blue-500" />;
             }}
-            nextIcon={()=>{
-              return <IoIosArrowForward  className="text-5xl text-blue-500"/>
+            nextIcon={() => {
+              return <IoIosArrowForward className="text-5xl hidden sm:flex text-blue-500" />;
             }}
             className="w-full"
             containerClassName="flex gap-5"
@@ -39,6 +39,13 @@ export default function SectionServicios() {
             numScroll={1}
             numVisible={3}
             autoplayInterval={5000}
+            responsiveOptions={[
+              {
+                breakpoint: "667px",
+                numVisible: 1,
+                numScroll: 1,
+              },
+            ]}
             itemTemplate={(D) => {
               return (
                 <CardServicios
