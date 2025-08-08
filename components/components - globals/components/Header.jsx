@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { DeployMenuMovil } from "../func/DeployMenuMovil";
+import { DeployMenuMovil } from "../Hooks/DeployMenuMovil";
 import { useEffect } from "react";
 import { BsChatDots } from "react-icons/bs";
 import { DeployChatBotContainer } from "./ChatBotContainer";
