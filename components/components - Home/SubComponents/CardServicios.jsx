@@ -5,11 +5,14 @@ import { CiBookmark } from "react-icons/ci";
 import { FaBookmark } from "react-icons/fa6";
 import { useState } from "react";
 
-export default function CardServicios({ Titulo, Descripcion ,Key}) {
+export default function CardServicios({ Titulo, Descripcion, Key }) {
   const [SaveService, setSaveService] = useState(false);
 
   return (
-    <article key={Key} className=" flex flex-col w-90  min-w-80 items-center  rounded-2xl border border-gray-300 bg-white p-5">
+    <article
+      key={Key}
+      className=" flex flex-col w-1/3  min-w-80 gap-2 items-center  rounded-2xl border border-gray-300 bg-white p-5"
+    >
       <header className="flex justify-between gap-5  w-[100%]">
         <Image className="w-[143px]" src={LogoGOB} alt="Logo"></Image>
 
