@@ -13,7 +13,7 @@ const albertsans = Albert_Sans({
 
 export default function SectionServicios() {
   return (
-    <section className="flex flex-col gap-10 lg:gap-20 pt-10 pb-10 bg-[#EFEFEF]/50">
+    <section className="flex flex-col gap-10 lg:gap-20 pt-10 pb-10 bg-[#EFEFEF]/50 ">
       <div className="text-center">
         <h1
           className={`text-4xl lg:text-6xl font-semibold ${albertsans.className}`}
@@ -22,10 +22,10 @@ export default function SectionServicios() {
         </h1>
       </div>
       <div
-        className="flex gap-5 sm:px-5 w-full justify-center"
+        className="flex gap-5 sm:px-5 w-full justify-center "
         // style={{ scrollbarWidth: "none", scrollbarColor: "blue" }}
       >
-        <div className="w-[85%] min-w-90 flex md:justify-center">
+        <div className="w-[80%] max-w-300 min-w-90 flex md:justify-center ">
           <Carousel
             prevIcon={() => {
               return <IoIosArrowBack className="text-5xl hidden sm:flex text-blue-500" />;
