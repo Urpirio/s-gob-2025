@@ -8,15 +8,18 @@ import { FaArrowDown } from "react-icons/fa6";
 import Link from 'next/link';
 import { IoIosArrowBack } from "react-icons/io";
 import { SetStateAbout } from '../components/section - servicios';
+import { motion } from "motion/react"
 
 
 export default function AboutServices({Data}) {
 
   return (
-    <article className='flex flex-col justify-between h-full py-5 w-full '>
+    <motion.article
+    // animate={{translateX:-5}}
+     className='flex flex-col justify-between bg-white h-full py-5 w-full  '>
         <header className='flex flex-col gap-5 lg:gap-5'>
             <div className='px-4 lg:px-0'>
-                <button className='flex items-center text-primary text-xl font-semibold gap-2' onClick={()=>{SetStateAbout(false)}}>
+                <button className='flex items-center text-primary text-xl font-semibold gap-2 hover:scale-105 transition-all duration-300 cursor-pointer'  onClick={()=>{SetStateAbout(false)}}>
                     <IoIosArrowBack/>
                     <span>Volver</span>
                 </button>
@@ -65,11 +68,11 @@ export default function AboutServices({Data}) {
             </div>
         </main>
         <footer className='flex justify-center px-5 lg:px-0 py-2'>
-            <Link  href={{pathname:`/${Data.id}`}} 
-                className='w-full lg:w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF]'>
+            <Link  href={{pathname:`/agendar-cita`}} 
+                className='w-full lg:w-50 py-2 flex justify-center items-center rounded-xl border text-white bg-[#0088FF] cursor-pointer hover:opacity-80 transition-all duration-300'>
                 <span>Agendar cita</span>
             </Link>
         </footer>
-    </article>
+    </motion.article>
   )
 }
