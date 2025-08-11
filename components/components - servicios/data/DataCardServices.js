@@ -1,7 +1,7 @@
 export const DataCardServices = [
     {
         key: 1,
-        id: 1,
+        id: 'agendar-cita',
         Servicio: '1 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -51,7 +51,7 @@ export const DataCardServices = [
     },
     {
         key: 2,
-        id: 2,
+        id: 'agendar-cita',
         Servicio: '2 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -99,7 +99,7 @@ export const DataCardServices = [
     },
     {
         key: 3,
-        id: 3,
+        id: 'agendar-cita',
         Servicio: '3 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -147,7 +147,7 @@ export const DataCardServices = [
     },
     {
         key: 4,
-        id: 4,
+        id: 'agendar-cita',
         Servicio: '4 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -195,7 +195,7 @@ export const DataCardServices = [
     },
     {
         key: 5,
-        id: 5,
+        id: 'agendar-cita',
         Servicio: '5 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -243,7 +243,7 @@ export const DataCardServices = [
     },
     {
         key: 6,
-        id: 6,
+        id: 'agendar-cita',
         Servicio: '6 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -291,7 +291,7 @@ export const DataCardServices = [
     },
     {
         key: 7,
-        id: 7,
+        id: 'agendar-cita',
         Servicio: '7 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -339,7 +339,7 @@ export const DataCardServices = [
     },
     {
         key: 8,
-        id: 8,
+        id: 'agendar-cita',
         Servicio: '8 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -387,7 +387,7 @@ export const DataCardServices = [
     },
     {
         key: 9,
-        id: 9,
+        id: 'agendar-cita',
         Servicio: '9 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
@@ -435,7 +435,7 @@ export const DataCardServices = [
     },
     {
         key: 10,
-        id: 10,
+        id: 'agendar-cita',
         Servicio: '10 Servicio',
         Descripcion: `Ciudadano, moderno, eficaz, eficiente, productivo,
         participativo y dinámico, incorporando el uso de
