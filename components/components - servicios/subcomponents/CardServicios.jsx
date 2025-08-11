@@ -32,7 +32,7 @@ export default function CardServicios({ChangeAboutS}) {
             </p>
         </main>
         <footer className=' flex justify-end'>
-            <button  className='text-white font-semibold p-2 rounded-xl bg-[#0088FF]' 
+            <button  className='text-white font-semibold p-2 rounded-xl bg-[#0088FF] cursor-pointer hover:opacity-80 transition-all duration-300' 
                 onClick={CGA}>
                 Solicitar servicio
             </button>
