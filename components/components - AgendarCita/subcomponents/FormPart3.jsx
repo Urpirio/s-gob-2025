@@ -1,6 +1,6 @@
 'use client';
 
-export default function FormPart3({InputsForm,DropdownPGob,DropdownTramite}) {
+export default function FormPart3({InputsForm,DropdownPGob,DropdownTramite,onConfirmarCita}) {
 
 
   return (
@@ -9,11 +9,11 @@ export default function FormPart3({InputsForm,DropdownPGob,DropdownTramite}) {
         <h1 className='text-4xl text-[#0088FF] font-semibold'>Datos de tu cita</h1>
       </div>
       <div className='flex  flex-col w-[100%]'>
-        <h1 className='text-xl text-[#0088FF] font-semibold'>Tramite:</h1>
+        <h1 className='text-xl text-[#0088FF] font-semibold'>Servicio:</h1>
         <span className='text-md text-gray-500'>{DropdownTramite ? DropdownTramite :'No disponible' }</span>
       </div>
       <div className='flex  flex-col w-[100%]'>
-        <h1 className='text-xl text-[#0088FF] font-semibold'>Institucion:</h1>
+        <h1 className='text-xl text-[#0088FF] font-semibold'>Punto GOB:</h1>
         <span className='text-md text-gray-500'>{DropdownPGob ? DropdownPGob : 'No disponible'}</span>
       </div>
       <div className='flex  flex-col w-[100%]'>
@@ -25,23 +25,27 @@ export default function FormPart3({InputsForm,DropdownPGob,DropdownTramite}) {
         <span className='text-md text-gray-500'>{InputsForm?.Apellidos}</span>
       </div>
       <div className='flex  flex-col w-[100%]'>
-        <h1 className='text-xl text-[#0088FF] font-semibold'>Telefono:</h1>
+        <h1 className='text-xl text-[#0088FF] font-semibold'>Teléfono:</h1>
         <span className='text-md text-gray-500'>{InputsForm?.Telefono}</span>
       </div>
       <div className='flex  flex-col w-[100%]'>
-        <h1 className='text-xl text-[#0088FF] font-semibold'>Correo electronico:</h1>
+        <h1 className='text-xl text-[#0088FF] font-semibold'>Correo electrónico:</h1>
         <span className='text-md text-gray-500'>{InputsForm?.Correo}</span>
       </div>
       <div className='flex flex-col  w-[100%]'>
-        <h1 className='text-xl text-[#0088FF] font-semibold'>Cedula:</h1>
+        <h1 className='text-xl text-[#0088FF] font-semibold'>Cédula:</h1>
         <span className='text-md text-gray-500'>{InputsForm?.Cedula}</span>
       </div>
       <div className='flex  flex-col w-[100%]'>
-        <h1 className='text-xl text-[#0088FF] font-semibold'>Direccion:</h1>
+        <h1 className='text-xl text-[#0088FF] font-semibold'>Dirección:</h1>
         <span className='text-md text-gray-500'>{InputsForm?.Direccion}</span>
       </div>
       <div>
-        <button className=' px-5 py-2 bg-[#0088FF] text-white rounded-md'>Confirmar cita</button>
+        <button 
+        onClick={onConfirmarCita}
+        className='px-5 py-2 bg-[#0088FF] text-white rounded-md hover:bg-blue-600 transition-colors duration-200'>
+          Confirmar cita
+        </button>
       </div>
     </div>
   )

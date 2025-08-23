@@ -9,9 +9,6 @@ const Albert_sans  = Albert_Sans({
 
 export default function SectionTramites() {
 
-    const { Grupo1 , Grupo2 } = CardTramites();
-
-
   return (
     <section className=" flex flex-col">
         <div className={`${Albert_sans.className} justify-center flex mb-10 px-5 lg:px-0`}>
@@ -22,12 +19,7 @@ export default function SectionTramites() {
                 <Image src={ImgBack} className="h-[50%] object-contain "/>
             </div>
             <div className=" xl:absolute relative  z-20 flex flex-col justify-around  h-[100%] w-[100%] gap-10 ">
-               <div className="flex justify-around w-[100%] gap-5 lg:gap-0 flex-wrap ">
-                {Grupo1}
-               </div> 
-               <div className="flex justify-around w-[100%] gap-5 lg:gap-0 flex-wrap">
-                {Grupo2}
-               </div>
+               <CardTramites />
             </div>
         </section>
     </section>

@@ -37,9 +37,15 @@ export default function CardTramites() {
         )
     });
 
-    return({
-        Grupo1:Grupo1,
-        Grupo2: Grupo2,
-    })
+    return (
+        <>
+            <div className="flex justify-around w-[100%] gap-5 lg:gap-0 flex-wrap ">
+                {Grupo1}
+            </div> 
+            <div className="flex justify-around w-[100%] gap-5 lg:gap-0 flex-wrap">
+                {Grupo2}
+            </div>
+        </>
+    );
   
 };

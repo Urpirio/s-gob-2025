@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup": "node scripts/init-db.js",
+    "db:check": "node -e \"import('./lib/db.js').then(db => db.getConnection().then(() => console.log('✅ Conexión exitosa')).catch(err => console.error('❌ Error:', err.message)))\""
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -15,7 +17,13 @@
     "@google/generative-ai": "^0.24.1",
     "@mui/material": "^7.1.1",
     "@mui/x-date-pickers": "^8.5.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
     "dayjs": "^1.11.13",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.2",
     "next": "15.3.2",
     "primereact": "^10.9.6",
     "qrcode.react": "^4.2.0",

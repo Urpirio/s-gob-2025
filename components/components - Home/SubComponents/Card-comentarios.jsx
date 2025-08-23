@@ -4,13 +4,13 @@ import { useState } from "react";
 
 export default function CardComentarios({Data}) {
 
-        const [Star,setStar] = useState(Array);
+        const [Star,setStar] = useState([]);
 
         for(let x = 0; x < Data?.Star; x++){
             if(Star.length === 0){
-                Star.push(<IoStar/>);
+                Star.push(<IoStar key={x}/>);
             }else if(Star.length < Data?.Star){
-                Star.push(<IoStar/>);
+                Star.push(<IoStar key={x}/>);
             }
         };
 
